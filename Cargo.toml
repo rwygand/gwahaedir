@@ -1,0 +1,13 @@
+[package]
+name = "gwahaedir"
+version = "0.1.0"
+edition = "2021"
+authors = ["Rob Wygand"]
+description = "Gwahaedir is a web app for auditing guilds in World of Warcraft"
+readme = "README.md"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.5.0-rc.3"
