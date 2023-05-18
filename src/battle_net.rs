@@ -37,7 +37,7 @@ pub async fn get_oauth_token(
 }
 
 
-async fn get_roster(access_token: String) -> Result<String, reqwest::Error> {
+pub async fn get_roster(access_token: String) -> Result<String, reqwest::Error> {
     let header = format!("Bearer {}", access_token);
     let url = "https://us.api.blizzard.com/data/wow/guild/proudmoore/power-word-taint/roster?namespace=profile-us&locale=en_US";
 

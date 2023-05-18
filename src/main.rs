@@ -18,20 +18,17 @@ async fn roster() -> String {
         "us");
 
     let token = token.await;
-    let x = match token {
+    match token {
         Ok(t) => {
-            let res = get_roster(t.access_token);
+            let res = battle_net::get_roster(t.access_token);
             let res = res.await;
-            let r = match res {
+            match res {
                 Ok(body) => body,
                 _ => "Error!!".to_string()
-            };
-            r
+            }
         }
         Err(err) => format!("Error occured {}", err.to_string())
-    };
-
-    x
+    }
 }
 
 #[launch]
