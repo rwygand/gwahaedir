@@ -40,7 +40,7 @@ COPY --from=builder /etc/group /etc/group
 WORKDIR /gwahaedir
 
 # Copy our build
-COPY --from=builder /gwahaedir/target/x86_64-unknown-linux-musl/release/gwahaedir ./
+COPY --from=builder /gwahaedir/target/release/gwahaedir ./
 
 # Use an unprivileged user.
 USER gwahaedir:gwahaedir
