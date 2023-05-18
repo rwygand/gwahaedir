@@ -1,10 +1,52 @@
 use serde::{Deserialize, Serialize};
+use serde_json::{Result as SerdeResult, Value};
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct OAuthToken {
     pub access_token: String,
     pub token_type: String,
     pub expires_in: usize,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct GuildRoster {
+    pub _links: Value,
+    pub guild: Guild,
+    pub members: Vec<CharacterRank>
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Guild {
+    key: Value,
+    pub name: String,
+    id: u64,
+    pub realm: Realm,
+    faction: Value
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Realm {
+    key: Value,
+    pub name: String,
+    id: u64,
+    slug: String
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct CharacterRank {
+    pub character: Character,
+    pub rank: i32
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Character {
+    pub key: Value,
+    pub name: String,
+    pub id: u64,
+    pub realm: Value,
+    pub level: u32,
+    pub playable_class: Value,
+    pub playable_race: Value,
 }
 
 /// To retrieve a token, you need to provide your client_id and client_secret as well as a region (US, EU, APAC or CN)
@@ -37,7 +79,7 @@ pub async fn get_oauth_token(
 }
 
 
-pub async fn get_roster(access_token: String) -> Result<String, reqwest::Error> {
+pub async fn get_roster(access_token: String) -> Result<GuildRoster, Box<dyn std::error::Error + Send + Sync>> {
     let header = format!("Bearer {}", access_token);
     let url = "https://us.api.blizzard.com/data/wow/guild/proudmoore/power-word-taint/roster?namespace=profile-us&locale=en_US";
 
@@ -46,7 +88,7 @@ pub async fn get_roster(access_token: String) -> Result<String, reqwest::Error> 
         .header(reqwest::header::AUTHORIZATION, header)
         .send()
         .await?
-        .text()
+        .json()
         .await?;
 
     Ok(resp)

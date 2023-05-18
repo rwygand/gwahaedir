@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Guild Roster - {{ guild.name }} </title>
+<style type="text/css">
+    .divTable
+    {
+        display:  table;
+        width:auto;
+        background-color:#eee;
+        border:1px solid  #666666;
+        border-spacing:5px;/*cellspacing:poor IE support for  this*/
+       /* border-collapse:separate;*/
+    }
+
+    .row
+    {
+       display:table-row;
+       width:auto;
+    }
+
+    .cell
+    {
+        float:left;/*fix for  buggy browsers*/
+        display:table-column;
+        width:200px;
+        background-color:#ccc;
+    }
+</style>
+
+</head>
+<body>
+<h1> {{ guild.name }} </h1>
+
+<div class="divTable">
+
+    <div class="row">
+      <div class="cell">Name</div>
+      <div class="cell">Level</div>
+      <div class="cell">Rank</div>
+    </div>
+
+    {% for cr in members %}
+      <div class="row">
+        <div class="cell">{{cr.character.name}}</div>
+        <div class="cell">{{cr.character.level}}</div>
+        <div class="cell">{{cr.rank}}</div>
+      </div>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>

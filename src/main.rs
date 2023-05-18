@@ -11,7 +11,7 @@ fn index() -> Template {
 }
 
 #[get("/roster")]
-async fn roster() -> String {
+async fn roster() -> Template {
     let token = battle_net::get_oauth_token(
         "f966f44ce65d45fda45d60f480158dab",
         "r16jKjXVp1WdSPRb6eHnBE6i2jlrnF9L",
@@ -22,12 +22,9 @@ async fn roster() -> String {
         Ok(t) => {
             let res = battle_net::get_roster(t.access_token);
             let res = res.await;
-            match res {
-                Ok(body) => body,
-                _ => "Error!!".to_string()
-            }
+            Template::render("roster", res.unwrap())
         }
-        Err(err) => format!("Error occured {}", err)
+        Err(err) => Template::render("roster", {})
     }
 }
 
