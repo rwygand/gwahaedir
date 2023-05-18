@@ -27,7 +27,7 @@ async fn roster() -> String {
                 _ => "Error!!".to_string()
             }
         }
-        Err(err) => format!("Error occured {}", err.to_string())
+        Err(err) => format!("Error occured {}", err)
     }
 }
 
