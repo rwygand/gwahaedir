@@ -24,7 +24,7 @@ async fn roster() -> Template {
             let res = res.await;
             Template::render("roster", res.unwrap())
         }
-        Err(err) => Template::render("roster", {})
+        Err(_) => Template::render("roster", ())
     }
 }
 
