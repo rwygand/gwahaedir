@@ -27,4 +27,3 @@ services:
           type: redis
           name: gwahaedir
           property: connectionString
-

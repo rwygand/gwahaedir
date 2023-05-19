@@ -1,2 +1,2 @@
 #!/bin/bash
-ROCKET_DATABASES={gwahaedir={url="$REDIS_URL"} ./target/release/gwahaedir 
+ROCKET_DATABASES={gwahaedir={url=${REDIS_URL}}} ./target/release/gwahaedir
