@@ -10,7 +10,7 @@ services:
     repo: https://github.com/rwygand/gwahaedir.git
     branch: main
     buildCommand: cargo build --release
-    startCommand: cargo run --release
+    startCommand: ./start
     envVars:
       - key: REDIS_HOST
         fromService:
