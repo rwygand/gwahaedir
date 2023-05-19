@@ -1,4 +1,3 @@
-mod battle_net;
 mod raider_io;
 
 #[macro_use] extern crate rocket;
@@ -13,20 +12,10 @@ fn index() -> Template {
 
 #[get("/roster")]
 async fn roster() -> Template {
-    let token = battle_net::get_oauth_token(
-        "f966f44ce65d45fda45d60f480158dab",
-        "r16jKjXVp1WdSPRb6eHnBE6i2jlrnF9L",
-        "us");
-
-    let token = token.await;
-    match token {
-        Ok(t) => {
-            let res = battle_net::get_roster(t.access_token);
-            let res = res.await;
-            Template::render("roster", res.unwrap())
-        }
-        Err(_) => Template::render("roster", ())
-    }
+    let rio_client = raider_io::RaiderIO::new();
+    let res = rio_client.get_roster();
+    let res = res.await;
+    Template::render("roster", res.unwrap())
 }
 
 #[launch]

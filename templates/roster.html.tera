@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Guild Roster - {{ guild.name }} </title>
+<title>Guild Roster - {{ name }} </title>
 <style type="text/css">
     .divTable
     {
@@ -29,21 +29,21 @@
 
 </head>
 <body>
-<h1> {{ guild.name }} </h1>
+<h1> {{ name }} </h1>
 
 <div class="divTable">
 
     <div class="row">
       <div class="cell">Name</div>
-      <div class="cell">Level</div>
+      <div class="cell">Class</div>
       <div class="cell">Rank</div>
     </div>
 
-    {% for cr in members %}
+    {% for member in members %}
       <div class="row">
-        <div class="cell">{{cr.character.name}}</div>
-        <div class="cell">{{cr.character.level}}</div>
-        <div class="cell">{{cr.rank}}</div>
+        <div class="cell">{{member.character.name}}</div>
+        <div class="cell">{{member.character.class}}</div>
+        <div class="cell">{{member.rank}}</div>
       </div>
     {% endfor %}
 
