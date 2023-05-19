@@ -1,0 +1,23 @@
+services:
+  - type: redis
+    name: gwahaedir
+    ipAllowList:
+      - source: 99.43.254.146
+        description: home
+  - type: web
+    name: gwahaedir
+    env: rust
+    repo: https://github.com/rwygand/gwahaedir.git
+    branch: main
+    envVars:
+      - key: REDIS_HOST
+        fromService:
+          type: redis
+          name: gwahaedir
+          property: host # available properties are listed below
+      - key: REDIS_PORT
+        fromService:
+          type: redis
+          name: gwahaedir
+          property: port
+
