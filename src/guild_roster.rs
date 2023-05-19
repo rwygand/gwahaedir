@@ -43,14 +43,13 @@ pub struct Character {
 /// Fetches the guild roster from redis. If it's not there, fetches it from
 /// RaiderIO. Deserialized the result into a GuildRoster
 pub async fn fetch(mut db: Connection<RedisPool>) -> Result<GuildRoster, Box<dyn Error>> {
-    let mut cache_data = db.get("guild_roster").await;
-
+    let cache_data = db.get("guild_roster").await;
     let mut data_s: String = match cache_data {
         Ok(s) => {
             println!("Found guild_roster in cache!");
             s
         },
-        Err(err) => {
+        Err(_err) => {
             println!("guild_roster not found in cache!");
             "".to_string()
         }
@@ -60,7 +59,8 @@ pub async fn fetch(mut db: Connection<RedisPool>) -> Result<GuildRoster, Box<dyn
     if data_s.is_empty() {
         let rio_client = RaiderIO::new();
         data_s = rio_client.get_roster().await?;
-        let foo = db.set("guild_roster", &data_s).await?;
+        // best effort write to cache
+        db.set("guild_roster", &data_s).await?;
         println!("Wrote guild_roster to cache!");
 
     }
