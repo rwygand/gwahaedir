@@ -1,0 +1,3878 @@
+{
+  "characterDetails": {
+    "character": {
+      "covenant": {
+        "id": 3,
+        "name": "Night Fae",
+        "icon": "ui_sigil_nightfae",
+        "renownLevel": 80,
+        "soulbind": {
+          "id": 1,
+          "name": "Niya"
+        }
+      },
+      "talentLoadout": {
+        "nodes": [
+          {
+            "node": {
+              "id": 82220,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103298,
+                  "traitDefinitionId": 108303,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 22842,
+                    "name": "Frenzied Regeneration",
+                    "icon": "ability_bullrush",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 3300,
+              "posY": 1500,
+              "row": 9,
+              "col": 3
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 91044,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 112967,
+                  "traitDefinitionId": 117972,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 197628,
+                    "name": "Starfire",
+                    "icon": "spell_arcane_starfire",
+                    "school": 64,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 5700,
+              "posY": 1500,
+              "row": 9,
+              "col": 9
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82223,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103301,
+                  "traitDefinitionId": 108306,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 106832,
+                    "name": "Thrash",
+                    "icon": "spell_druid_thrash",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 2700,
+              "posY": 2100,
+              "row": 8,
+              "col": 2
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82208,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103286,
+                  "traitDefinitionId": 108291,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 93402,
+                    "name": "Sunfire",
+                    "icon": "ability_mage_firestarter",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 5700,
+              "posY": 2100,
+              "row": 8,
+              "col": 9
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82226,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103304,
+                  "traitDefinitionId": 108309,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 400158,
+                    "name": "Improved Swipe",
+                    "icon": "inv_misc_monsterclaw_03",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 2700,
+              "posY": 2700,
+              "row": 7,
+              "col": 2
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 91045,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 112968,
+                  "traitDefinitionId": 117973,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 197625,
+                    "name": "Moonkin Form",
+                    "icon": "spell_nature_forceofnature",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 5700,
+              "posY": 2700,
+              "row": 7,
+              "col": 9
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82225,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103303,
+                  "traitDefinitionId": 108308,
+                  "type": 2,
+                  "maxRanks": 2,
+                  "spell": {
+                    "id": 108299,
+                    "name": "Killer Instinct",
+                    "icon": "ability_druid_predatoryinstincts",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 2700,
+              "posY": 3297,
+              "row": 6,
+              "col": 2
+            },
+            "entryIndex": 0,
+            "rank": 2
+          },
+          {
+            "node": {
+              "id": 82227,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103305,
+                  "traitDefinitionId": 108310,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 192081,
+                    "name": "Ironfur",
+                    "icon": "ability_druid_ironfur",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 3300,
+              "posY": 3300,
+              "row": 6,
+              "col": 3
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82239,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103318,
+                  "traitDefinitionId": 108323,
+                  "type": 2,
+                  "maxRanks": 2,
+                  "spell": {
+                    "id": 131768,
+                    "name": "Feline Swiftness",
+                    "icon": "ability_druid_dash",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 2100,
+              "posY": 3900,
+              "row": 5,
+              "col": 1
+            },
+            "entryIndex": 0,
+            "rank": 2
+          },
+          {
+            "node": {
+              "id": 82228,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103306,
+                  "traitDefinitionId": 108311,
+                  "type": 2,
+                  "maxRanks": 2,
+                  "spell": {
+                    "id": 16931,
+                    "name": "Thick Hide",
+                    "icon": "inv_misc_pelt_bear_03",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 3300,
+              "posY": 3900,
+              "row": 5,
+              "col": 3
+            },
+            "entryIndex": 0,
+            "rank": 2
+          },
+          {
+            "node": {
+              "id": 82198,
+              "treeId": 793,
+              "type": 2,
+              "entries": [
+                {
+                  "id": 103276,
+                  "traitDefinitionId": 108281,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 102401,
+                    "name": "Wild Charge",
+                    "icon": "spell_druid_wildcharge",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                },
+                {
+                  "id": 103275,
+                  "traitDefinitionId": 108280,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 252216,
+                    "name": "Tiger Dash",
+                    "icon": "ability_druid_dash_orange",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 3900,
+              "posY": 3900,
+              "row": 5,
+              "col": 5
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82210,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103288,
+                  "traitDefinitionId": 108293,
+                  "type": 2,
+                  "maxRanks": 2,
+                  "spell": {
+                    "id": 197524,
+                    "name": "Astral Influence",
+                    "icon": "ability_skyreach_lens_flare",
+                    "school": 72,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 5700,
+              "posY": 3900,
+              "row": 5,
+              "col": 9
+            },
+            "entryIndex": 0,
+            "rank": 2
+          },
+          {
+            "node": {
+              "id": 82224,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103302,
+                  "traitDefinitionId": 108307,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 106839,
+                    "name": "Skull Bash",
+                    "icon": "inv_bone_skull_04",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 2700,
+              "posY": 4500,
+              "row": 4,
+              "col": 2
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82229,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103307,
+                  "traitDefinitionId": 108312,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 2908,
+                    "name": "Soothe",
+                    "icon": "ability_hunter_beastsoothe",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 3900,
+              "posY": 4500,
+              "row": 4,
+              "col": 5
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82207,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103285,
+                  "traitDefinitionId": 108290,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 231050,
+                    "name": "Improved Sunfire",
+                    "icon": "ability_mage_firestarter",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 5100,
+              "posY": 4500,
+              "row": 4,
+              "col": 8
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82209,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103287,
+                  "traitDefinitionId": 108292,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 132469,
+                    "name": "Typhoon",
+                    "icon": "ability_druid_typhoon",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 6300,
+              "posY": 4500,
+              "row": 4,
+              "col": 10
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82238,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103317,
+                  "traitDefinitionId": 108322,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 159286,
+                    "name": "Primal Fury",
+                    "icon": "ability_racial_cannibalize",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 2100,
+              "posY": 5100,
+              "row": 3,
+              "col": 1
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82236,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103314,
+                  "traitDefinitionId": 108319,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 385786,
+                    "name": "Matted Fur",
+                    "icon": "inv_misc_pelt_15",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 3300,
+              "posY": 5100,
+              "row": 3,
+              "col": 3
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82234,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103312,
+                  "traitDefinitionId": 108317,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 106898,
+                    "name": "Stampeding Roar",
+                    "icon": "spell_druid_stampedingroar_cat",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": true,
+              "posX": 3900,
+              "posY": 5100,
+              "row": 3,
+              "col": 5
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82237,
+              "treeId": 793,
+              "type": 2,
+              "entries": [
+                {
+                  "id": 103316,
+                  "traitDefinitionId": 108321,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 99,
+                    "name": "Incapacitating Roar",
+                    "icon": "ability_druid_demoralizingroar",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                },
+                {
+                  "id": 103315,
+                  "traitDefinitionId": 108320,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 5211,
+                    "name": "Mighty Bash",
+                    "icon": "ability_druid_bash",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 2700,
+              "posY": 5700,
+              "row": 2,
+              "col": 2
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82233,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103311,
+                  "traitDefinitionId": 108316,
+                  "type": 2,
+                  "maxRanks": 3,
+                  "spell": {
+                    "id": 378988,
+                    "name": "Lycara's Teachings",
+                    "icon": "inv_trinket_ardenweald_02_green",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 3900,
+              "posY": 5700,
+              "row": 2,
+              "col": 5
+            },
+            "entryIndex": 0,
+            "rank": 3
+          },
+          {
+            "node": {
+              "id": 82242,
+              "treeId": 793,
+              "type": 2,
+              "entries": [
+                {
+                  "id": 103322,
+                  "traitDefinitionId": 108327,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 102359,
+                    "name": "Mass Entanglement",
+                    "icon": "spell_druid_massentanglement",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                },
+                {
+                  "id": 103321,
+                  "traitDefinitionId": 108326,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 102793,
+                    "name": "Ursol's Vortex",
+                    "icon": "spell_druid_ursolsvortex",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 5100,
+              "posY": 5700,
+              "row": 2,
+              "col": 8
+            },
+            "entryIndex": 1,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82246,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103326,
+                  "traitDefinitionId": 108331,
+                  "type": 2,
+                  "maxRanks": 2,
+                  "spell": {
+                    "id": 377847,
+                    "name": "Well-Honed Instincts",
+                    "icon": "ability_druid_tigersroar",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 2700,
+              "posY": 6300,
+              "row": 1,
+              "col": 2
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82232,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103310,
+                  "traitDefinitionId": 108315,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 108238,
+                    "name": "Renewal",
+                    "icon": "spell_nature_natureblessing",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 4200,
+              "posY": 6300,
+              "row": 1,
+              "col": 6
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82243,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103323,
+                  "traitDefinitionId": 108328,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 29166,
+                    "name": "Innervate",
+                    "icon": "spell_nature_lightning",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 5100,
+              "posY": 6300,
+              "row": 1,
+              "col": 8
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82124,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103188,
+                  "traitDefinitionId": 108193,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 5217,
+                    "name": "Tiger's Fury",
+                    "icon": "ability_mount_jungletiger",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11700,
+              "posY": 1500,
+              "row": 9,
+              "col": 15
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82123,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103187,
+                  "traitDefinitionId": 108192,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 16864,
+                    "name": "Omen of Clarity",
+                    "icon": "spell_nature_crystalball",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11100,
+              "posY": 2100,
+              "row": 8,
+              "col": 14
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82098,
+              "treeId": 793,
+              "type": 2,
+              "entries": [
+                {
+                  "id": 103159,
+                  "traitDefinitionId": 108164,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 231063,
+                    "name": "Merciless Claws",
+                    "icon": "inv_misc_monsterclaw_03",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                },
+                {
+                  "id": 114823,
+                  "traitDefinitionId": 119830,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 405300,
+                    "name": "Thrashing Claws",
+                    "icon": "spell_druid_thrash",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 10499,
+              "posY": 2699,
+              "row": 7,
+              "col": 13
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82122,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103186,
+                  "traitDefinitionId": 108191,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 202021,
+                    "name": "Predator",
+                    "icon": "ability_hunter_catlikereflexes",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11700,
+              "posY": 2700,
+              "row": 7,
+              "col": 15
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82102,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103163,
+                  "traitDefinitionId": 108168,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 202031,
+                    "name": "Sabertooth",
+                    "icon": "inv_misc_monsterfang_01",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11100,
+              "posY": 3300,
+              "row": 6,
+              "col": 14
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82121,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103185,
+                  "traitDefinitionId": 108190,
+                  "type": 2,
+                  "maxRanks": 2,
+                  "spell": {
+                    "id": 383352,
+                    "name": "Tireless Energy",
+                    "icon": "spell_chargepositive",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11700,
+              "posY": 3300,
+              "row": 6,
+              "col": 15
+            },
+            "entryIndex": 0,
+            "rank": 2
+          },
+          {
+            "node": {
+              "id": 82119,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103183,
+                  "traitDefinitionId": 108188,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 390772,
+                    "name": "Pouncing Strikes",
+                    "icon": "ability_druid_prowl",
+                    "school": 8,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 12300,
+              "posY": 3300,
+              "row": 6,
+              "col": 16
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82104,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103165,
+                  "traitDefinitionId": 108170,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 384667,
+                    "name": "Sudden Ambush",
+                    "icon": "ability_hunter_catlikereflexes",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 10490,
+              "posY": 3900,
+              "row": 5,
+              "col": 13
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82116,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103180,
+                  "traitDefinitionId": 108185,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 61336,
+                    "name": "Survival Instincts",
+                    "icon": "ability_druid_tigersroar",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11700,
+              "posY": 3900,
+              "row": 5,
+              "col": 15
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82103,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103164,
+                  "traitDefinitionId": 108169,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 48484,
+                    "name": "Infected Wounds",
+                    "icon": "ability_druid_infectedwound",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 12300,
+              "posY": 3900,
+              "row": 5,
+              "col": 16
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82118,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103182,
+                  "traitDefinitionId": 108187,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 384665,
+                    "name": "Taste for Blood",
+                    "icon": "ability_druid_ferociousbite",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 12900,
+              "posY": 3899,
+              "row": 5,
+              "col": 17
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82106,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103167,
+                  "traitDefinitionId": 108172,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 16974,
+                    "name": "Predatory Swiftness",
+                    "icon": "ability_hunter_pet_cat",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 10500,
+              "posY": 4500,
+              "row": 4,
+              "col": 13
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82101,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103162,
+                  "traitDefinitionId": 108167,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 343223,
+                    "name": "Berserk",
+                    "icon": "ability_druid_berserk",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11700,
+              "posY": 4500,
+              "row": 4,
+              "col": 15
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82117,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103181,
+                  "traitDefinitionId": 108186,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 391045,
+                    "name": "Dreadful Bleeding",
+                    "icon": "ability_ghoulfrenzy",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 12900,
+              "posY": 4500,
+              "row": 4,
+              "col": 17
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82107,
+              "treeId": 793,
+              "type": 2,
+              "entries": [
+                {
+                  "id": 103169,
+                  "traitDefinitionId": 108174,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 391078,
+                    "name": "Raging Fury",
+                    "icon": "ability_druid_predatoryinstincts",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                },
+                {
+                  "id": 103168,
+                  "traitDefinitionId": 108173,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 391872,
+                    "name": "Tiger's Tenacity",
+                    "icon": "ability_druid_healinginstincts",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 9900,
+              "posY": 5100,
+              "row": 3,
+              "col": 12
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82105,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103166,
+                  "traitDefinitionId": 108171,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 391174,
+                    "name": "Berserk: Heart of the Lion",
+                    "icon": "ability_druid_berserk",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11100,
+              "posY": 5100,
+              "row": 3,
+              "col": 14
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82100,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103161,
+                  "traitDefinitionId": 108166,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 236068,
+                    "name": "Moment of Clarity",
+                    "icon": "spell_druid_momentofclarity",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11700,
+              "posY": 5100,
+              "row": 3,
+              "col": 15
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82090,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103149,
+                  "traitDefinitionId": 108154,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 384668,
+                    "name": "Berserk: Frenzy",
+                    "icon": "ability_druid_berserk",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 12300,
+              "posY": 5100,
+              "row": 3,
+              "col": 16
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82091,
+              "treeId": 793,
+              "type": 2,
+              "entries": [
+                {
+                  "id": 103150,
+                  "traitDefinitionId": 108155,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 390864,
+                    "name": "Wild Slashes",
+                    "icon": "ability_xavius_tormentingswipe",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                },
+                {
+                  "id": 103151,
+                  "traitDefinitionId": 108156,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 202028,
+                    "name": "Brutal Slash",
+                    "icon": "ability_druid_ravage",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 13500,
+              "posY": 5100,
+              "row": 3,
+              "col": 18
+            },
+            "entryIndex": 1,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82110,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103173,
+                  "traitDefinitionId": 108178,
+                  "type": 2,
+                  "maxRanks": 2,
+                  "spell": {
+                    "id": 390902,
+                    "name": "Carnivorous Instinct",
+                    "icon": "ability_mount_jungletiger",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 10500,
+              "posY": 5700,
+              "row": 2,
+              "col": 13
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82115,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103179,
+                  "traitDefinitionId": 108184,
+                  "type": 2,
+                  "maxRanks": 2,
+                  "spell": {
+                    "id": 391875,
+                    "name": "Frantic Momentum",
+                    "icon": "spell_druid_savagery",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11700,
+              "posY": 5700,
+              "row": 2,
+              "col": 15
+            },
+            "entryIndex": 0,
+            "rank": 2
+          },
+          {
+            "node": {
+              "id": 82109,
+              "treeId": 793,
+              "type": 2,
+              "entries": [
+                {
+                  "id": 103172,
+                  "traitDefinitionId": 108177,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 391972,
+                    "name": "Lion's Strength",
+                    "icon": "ability_hunter_masterscall",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                },
+                {
+                  "id": 103171,
+                  "traitDefinitionId": 108176,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 319439,
+                    "name": "Bloodtalons",
+                    "icon": "spell_druid_bloodythrash",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 9900,
+              "posY": 6300,
+              "row": 1,
+              "col": 12
+            },
+            "entryIndex": 1,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82112,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103175,
+                  "traitDefinitionId": 108180,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 391888,
+                    "name": "Adaptive Swarm",
+                    "icon": "ability_maldraxxus_druid",
+                    "school": 32,
+                    "rank": "Shadowlands",
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11100,
+              "posY": 6300,
+              "row": 1,
+              "col": 14
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82114,
+              "treeId": 793,
+              "type": 2,
+              "entries": [
+                {
+                  "id": 103178,
+                  "traitDefinitionId": 108183,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 102543,
+                    "name": "Incarnation: Avatar of Ashamane",
+                    "icon": "spell_druid_incarnation",
+                    "school": 1,
+                    "rank": "Shapeshift",
+                    "hasCooldown": true
+                  }
+                },
+                {
+                  "id": 103177,
+                  "traitDefinitionId": 108182,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 391528,
+                    "name": "Convoke the Spirits",
+                    "icon": "ability_ardenweald_druid",
+                    "school": 8,
+                    "rank": "Shadowlands",
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11700,
+              "posY": 6300,
+              "row": 1,
+              "col": 15
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82096,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103157,
+                  "traitDefinitionId": 108162,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 158476,
+                    "name": "Soul of the Forest",
+                    "icon": "ability_druid_manatree",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 12300,
+              "posY": 6300,
+              "row": 1,
+              "col": 16
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82108,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103170,
+                  "traitDefinitionId": 108175,
+                  "type": 1,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 274837,
+                    "name": "Feral Frenzy",
+                    "icon": "ability_druid_rake",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": true
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 10500,
+              "posY": 6900,
+              "row": 0,
+              "col": 13
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82113,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103176,
+                  "traitDefinitionId": 108181,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 391548,
+                    "name": "Ashamane's Guidance",
+                    "icon": "spell_druid_incarnation",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 11700,
+              "posY": 6900,
+              "row": 0,
+              "col": 15
+            },
+            "entryIndex": 0,
+            "rank": 1
+          },
+          {
+            "node": {
+              "id": 82095,
+              "treeId": 793,
+              "type": 0,
+              "entries": [
+                {
+                  "id": 103156,
+                  "traitDefinitionId": 108161,
+                  "type": 2,
+                  "maxRanks": 1,
+                  "spell": {
+                    "id": 400320,
+                    "name": "Circle of Life and Death",
+                    "icon": "ability_druid_cyclone",
+                    "school": 1,
+                    "rank": null,
+                    "hasCooldown": false
+                  }
+                }
+              ],
+              "important": false,
+              "posX": 12300,
+              "posY": 6900,
+              "row": 0,
+              "col": 16
+            },
+            "entryIndex": 0,
+            "rank": 1
+          }
+        ],
+        "specId": 103,
+        "loadoutText": "BcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg0QiikkkUS7ASKJJRSCAAAAAAFASSAQIJJJkEpkQLcAAAAAAAIBAA"
+      },
+      "id": 107062664,
+      "persona_id": 36962,
+      "name": "Bearhug",
+      "class": {
+        "id": 11,
+        "name": "Druid",
+        "slug": "druid"
+      },
+      "race": {
+        "id": 28,
+        "name": "Highmountain Tauren",
+        "slug": "highmountain-tauren",
+        "faction": "horde"
+      },
+      "faction": "horde",
+      "level": 70,
+      "spec": {
+        "name": "Feral",
+        "slug": "feral"
+      },
+      "path": "/characters/us/proudmoore/Bearhug",
+      "realm": {
+        "id": 419,
+        "connectedRealmId": 224,
+        "name": "Proudmoore",
+        "altName": null,
+        "slug": "proudmoore",
+        "altSlug": "proudmoore",
+        "locale": "en_US",
+        "isConnected": false
+      },
+      "region": {
+        "name": "United States & Oceania",
+        "slug": "us",
+        "short_name": "US"
+      },
+      "recruitmentProfiles": [],
+      "gender": "male",
+      "achievementPoints": 28860,
+      "honorableKills": 0,
+      "itemLevelEquipped": 425,
+      "thumbnailUrl": "//render.worldofwarcraft.com/us/character/proudmoore/127/238333311-avatar.jpg?alt=wow/static/images/2d/avatar/28-0.jpg",
+      "guild": {
+        "id": 1554651,
+        "name": "Power Word Taint",
+        "faction": "horde",
+        "realm": {
+          "id": 419,
+          "connectedRealmId": 224,
+          "name": "Proudmoore",
+          "altName": null,
+          "slug": "proudmoore",
+          "altSlug": "proudmoore",
+          "locale": "en_US",
+          "isConnected": false
+        },
+        "region": {
+          "name": "United States & Oceania",
+          "slug": "us",
+          "short_name": "US"
+        },
+        "path": "/guilds/us/proudmoore/Power%20Word%20Taint"
+      }
+    },
+    "team": null,
+    "characterCustomizations": {
+      "profile_banner": "hordebanner8",
+      "profile_frame": null,
+      "biography": null,
+      "main_character": null,
+      "bnet_battletag": null,
+      "twitch_profile": "",
+      "youtube_profile": "",
+      "twitter_profile": "",
+      "discord_profile": "",
+      "wowhead_profile": "",
+      "isClaimed": true
+    },
+    "patronLevel": null,
+    "meta": {
+      "firstCrawledAt": "2022-07-29T09:57:14.000Z",
+      "lastCrawledAt": "2023-05-19T04:33:24.000Z",
+      "loggedOutAt": "2023-05-19T03:30:58.000Z",
+      "missingAt": null
+    },
+    "newsArticle": null,
+    "user": null,
+    "raidProgress": [
+      {
+        "raid": "aberrus-the-shadowed-crucible",
+        "aotc": null,
+        "cuttingEdge": null,
+        "encountersDefeated": {
+          "normal": [
+            {
+              "slug": "kazzara-the-hellforged",
+              "firstDefeated": "2023-05-10T01:36:24.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-17T01:33:37.000Z"
+            },
+            {
+              "slug": "the-amalgamation-chamber",
+              "firstDefeated": "2023-05-10T01:50:50.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-17T01:44:06.000Z"
+            },
+            {
+              "slug": "the-forgotten-experiments",
+              "firstDefeated": "2023-05-10T02:04:54.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-17T01:53:00.000Z"
+            },
+            {
+              "slug": "assault-of-the-zaqali",
+              "firstDefeated": "2023-05-10T02:54:05.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-17T02:06:20.000Z"
+            },
+            {
+              "slug": "rashok-the-elder",
+              "firstDefeated": "2023-05-10T03:13:03.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-17T02:14:14.000Z"
+            },
+            {
+              "slug": "the-vigilant-steward-zskarn",
+              "firstDefeated": "2023-05-10T03:24:07.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-17T02:23:13.000Z"
+            },
+            {
+              "slug": "magmorax",
+              "firstDefeated": "2023-05-10T03:33:31.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-17T02:31:06.000Z"
+            },
+            {
+              "slug": "echo-of-neltharion",
+              "firstDefeated": "2023-05-13T01:55:27.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-17T02:56:34.000Z"
+            }
+          ],
+          "heroic": [
+            {
+              "slug": "kazzara-the-hellforged",
+              "firstDefeated": "2023-05-12T02:01:00.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-19T01:38:22.000Z"
+            },
+            {
+              "slug": "the-amalgamation-chamber",
+              "firstDefeated": "2023-05-12T03:17:49.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2023-05-19T01:54:09.000Z"
+            },
+            {
+              "slug": "the-forgotten-experiments",
+              "firstDefeated": "2023-05-19T02:06:44.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 1,
+              "lastDefeated": "2023-05-19T02:06:44.000Z"
+            },
+            {
+              "slug": "assault-of-the-zaqali",
+              "firstDefeated": "2023-05-19T02:23:21.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 1,
+              "lastDefeated": "2023-05-19T02:23:21.000Z"
+            },
+            {
+              "slug": "rashok-the-elder",
+              "firstDefeated": "2023-05-19T03:00:38.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 1,
+              "lastDefeated": "2023-05-19T03:00:38.000Z"
+            }
+          ],
+          "mythic": []
+        }
+      },
+      {
+        "raid": "antorus-the-burning-throne",
+        "aotc": "2018-01-26T03:37:02.000Z",
+        "cuttingEdge": null,
+        "encountersDefeated": {
+          "normal": [
+            {
+              "slug": "garothi-worldbreaker",
+              "firstDefeated": "2017-11-29T03:09:26.000Z",
+              "itemLevel": 945,
+              "artifactTraits": 74,
+              "numKills": 14,
+              "lastDefeated": "2018-07-14T21:13:31.000Z"
+            },
+            {
+              "slug": "felhounds-of-sargeras",
+              "firstDefeated": "2017-11-29T03:21:55.000Z",
+              "itemLevel": 945,
+              "artifactTraits": 74,
+              "numKills": 13,
+              "lastDefeated": "2018-07-14T21:25:22.000Z"
+            },
+            {
+              "slug": "portal-keeper-hasabel",
+              "firstDefeated": "2017-11-29T04:25:51.000Z",
+              "itemLevel": 945,
+              "artifactTraits": 74,
+              "numKills": 10,
+              "lastDefeated": "2018-03-05T02:51:04.000Z"
+            },
+            {
+              "slug": "antoran-high-command",
+              "firstDefeated": "2017-11-29T04:06:56.000Z",
+              "itemLevel": 945,
+              "artifactTraits": 74,
+              "numKills": 11,
+              "lastDefeated": "2018-07-14T21:40:31.000Z"
+            },
+            {
+              "slug": "eonar-the-life-binder",
+              "firstDefeated": "2017-11-29T04:47:16.000Z",
+              "itemLevel": 945,
+              "artifactTraits": 74,
+              "numKills": 10,
+              "lastDefeated": "2018-03-05T02:58:03.000Z"
+            },
+            {
+              "slug": "imonar-the-soulhunter",
+              "firstDefeated": "2017-11-29T04:57:15.000Z",
+              "itemLevel": 945,
+              "artifactTraits": 74,
+              "numKills": 11,
+              "lastDefeated": "2018-03-12T03:03:43.000Z"
+            },
+            {
+              "slug": "kingaroth",
+              "firstDefeated": "2017-12-01T04:04:34.000Z",
+              "itemLevel": 945,
+              "artifactTraits": 65,
+              "numKills": 10,
+              "lastDefeated": "2018-03-05T03:14:09.000Z"
+            },
+            {
+              "slug": "varimathras",
+              "firstDefeated": "2017-12-01T04:39:03.000Z",
+              "itemLevel": 945,
+              "artifactTraits": 65,
+              "numKills": 11,
+              "lastDefeated": "2018-03-05T03:26:55.000Z"
+            },
+            {
+              "slug": "the-coven-of-shivarra",
+              "firstDefeated": "2017-12-04T02:27:46.000Z",
+              "itemLevel": 948,
+              "artifactTraits": 75,
+              "numKills": 11,
+              "lastDefeated": "2018-03-12T01:39:15.000Z"
+            },
+            {
+              "slug": "aggramar",
+              "firstDefeated": "2017-12-04T02:41:51.000Z",
+              "itemLevel": 948,
+              "artifactTraits": 75,
+              "numKills": 12,
+              "lastDefeated": "2018-07-06T20:35:21.000Z"
+            },
+            {
+              "slug": "argus-the-unmaker",
+              "firstDefeated": "2017-12-04T03:26:22.000Z",
+              "itemLevel": 948,
+              "artifactTraits": 75,
+              "numKills": 12,
+              "lastDefeated": "2018-07-06T20:54:27.000Z"
+            }
+          ],
+          "heroic": [
+            {
+              "slug": "garothi-worldbreaker",
+              "firstDefeated": "2017-12-04T03:47:37.000Z",
+              "itemLevel": 948,
+              "artifactTraits": 75,
+              "numKills": 16,
+              "lastDefeated": "2018-03-21T02:06:13.000Z"
+            },
+            {
+              "slug": "felhounds-of-sargeras",
+              "firstDefeated": "2017-12-04T03:58:49.000Z",
+              "itemLevel": 948,
+              "artifactTraits": 75,
+              "numKills": 16,
+              "lastDefeated": "2018-03-21T02:27:15.000Z"
+            },
+            {
+              "slug": "portal-keeper-hasabel",
+              "firstDefeated": "2017-12-11T03:36:57.000Z",
+              "itemLevel": 953,
+              "artifactTraits": 75,
+              "numKills": 15,
+              "lastDefeated": "2018-03-21T02:52:15.000Z"
+            },
+            {
+              "slug": "antoran-high-command",
+              "firstDefeated": "2017-12-15T04:51:35.000Z",
+              "itemLevel": 953,
+              "artifactTraits": 75,
+              "numKills": 14,
+              "lastDefeated": "2018-03-21T02:40:35.000Z"
+            },
+            {
+              "slug": "eonar-the-life-binder",
+              "firstDefeated": "2017-12-11T02:34:20.000Z",
+              "itemLevel": 953,
+              "artifactTraits": 75,
+              "numKills": 15,
+              "lastDefeated": "2018-03-21T03:01:43.000Z"
+            },
+            {
+              "slug": "imonar-the-soulhunter",
+              "firstDefeated": "2017-12-22T04:33:49.000Z",
+              "itemLevel": 955,
+              "artifactTraits": 75,
+              "numKills": 13,
+              "lastDefeated": "2018-03-23T02:23:55.000Z"
+            },
+            {
+              "slug": "kingaroth",
+              "firstDefeated": "2018-01-03T04:46:16.000Z",
+              "itemLevel": 959,
+              "artifactTraits": 75,
+              "numKills": 12,
+              "lastDefeated": "2018-03-23T02:36:07.000Z"
+            },
+            {
+              "slug": "varimathras",
+              "firstDefeated": "2018-01-05T03:28:56.000Z",
+              "itemLevel": 959,
+              "artifactTraits": 75,
+              "numKills": 11,
+              "lastDefeated": "2018-03-16T02:12:44.000Z"
+            },
+            {
+              "slug": "the-coven-of-shivarra",
+              "firstDefeated": "2018-01-12T04:00:28.000Z",
+              "itemLevel": 963,
+              "artifactTraits": 75,
+              "numKills": 9,
+              "lastDefeated": "2018-03-16T02:25:20.000Z"
+            },
+            {
+              "slug": "aggramar",
+              "firstDefeated": "2018-01-19T04:45:20.000Z",
+              "itemLevel": 965,
+              "artifactTraits": 75,
+              "numKills": 10,
+              "lastDefeated": "2018-07-07T04:17:03.000Z"
+            },
+            {
+              "slug": "argus-the-unmaker",
+              "firstDefeated": "2018-01-26T03:37:02.000Z",
+              "itemLevel": 966,
+              "artifactTraits": 75,
+              "numKills": 8,
+              "lastDefeated": "2018-03-14T02:53:28.000Z"
+            }
+          ],
+          "mythic": []
+        }
+      },
+      {
+        "raid": "vault-of-the-incarnates",
+        "aotc": "2023-02-17T03:15:29.000Z",
+        "cuttingEdge": null,
+        "encountersDefeated": {
+          "normal": [
+            {
+              "slug": "eranog",
+              "firstDefeated": "2022-12-14T02:42:30.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 9,
+              "lastDefeated": "2023-03-10T02:45:10.000Z"
+            },
+            {
+              "slug": "terros",
+              "firstDefeated": "2022-12-16T02:54:23.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 8,
+              "lastDefeated": "2023-03-10T02:55:24.000Z"
+            },
+            {
+              "slug": "the-primal-council",
+              "firstDefeated": "2022-12-14T03:22:50.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 9,
+              "lastDefeated": "2023-03-10T03:33:47.000Z"
+            },
+            {
+              "slug": "sennarth-the-cold-breath",
+              "firstDefeated": "2022-12-16T03:27:30.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 8,
+              "lastDefeated": "2023-03-10T03:06:46.000Z"
+            },
+            {
+              "slug": "dathea-ascended",
+              "firstDefeated": "2022-12-17T03:21:09.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 7,
+              "lastDefeated": "2023-03-10T04:12:58.000Z"
+            },
+            {
+              "slug": "kurog-grimtotem",
+              "firstDefeated": "2022-12-17T02:48:34.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 8,
+              "lastDefeated": "2023-03-10T03:22:50.000Z"
+            },
+            {
+              "slug": "broodkeeper-diurna",
+              "firstDefeated": "2023-01-03T06:32:18.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 8,
+              "lastDefeated": "2023-04-07T01:35:51.000Z"
+            },
+            {
+              "slug": "raszageth-the-stormeater",
+              "firstDefeated": "2022-12-31T04:18:18.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 8,
+              "lastDefeated": "2023-04-07T01:48:25.000Z"
+            }
+          ],
+          "heroic": [
+            {
+              "slug": "eranog",
+              "firstDefeated": "2022-12-17T04:03:09.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 16,
+              "lastDefeated": "2023-04-12T01:34:41.000Z"
+            },
+            {
+              "slug": "terros",
+              "firstDefeated": "2023-01-06T02:52:48.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 12,
+              "lastDefeated": "2023-04-12T03:02:31.000Z"
+            },
+            {
+              "slug": "the-primal-council",
+              "firstDefeated": "2023-01-06T03:29:45.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 12,
+              "lastDefeated": "2023-04-12T02:35:11.000Z"
+            },
+            {
+              "slug": "sennarth-the-cold-breath",
+              "firstDefeated": "2023-01-06T03:12:05.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 12,
+              "lastDefeated": "2023-04-12T03:15:59.000Z"
+            },
+            {
+              "slug": "dathea-ascended",
+              "firstDefeated": "2023-01-13T02:46:17.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 11,
+              "lastDefeated": "2023-04-12T02:50:52.000Z"
+            },
+            {
+              "slug": "kurog-grimtotem",
+              "firstDefeated": "2023-01-13T03:16:47.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 8,
+              "lastDefeated": "2023-04-05T02:44:48.000Z"
+            },
+            {
+              "slug": "broodkeeper-diurna",
+              "firstDefeated": "2023-01-27T02:51:35.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 12,
+              "lastDefeated": "2023-05-07T00:31:22.000Z"
+            },
+            {
+              "slug": "raszageth-the-stormeater",
+              "firstDefeated": "2023-02-17T03:15:29.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 6,
+              "lastDefeated": "2023-04-12T02:10:28.000Z"
+            }
+          ],
+          "mythic": []
+        }
+      }
+    ],
+    "itemDetails": {
+      "updated_at": "2023-05-19T03:31:35.000Z",
+      "item_level_equipped": 425,
+      "item_level_total": 0,
+      "artifact_traits": 0,
+      "corruption": {
+        "added": 0,
+        "resisted": 0,
+        "total": 0,
+        "cloakRank": 0,
+        "spells": []
+      },
+      "items": {
+        "head": {
+          "item_id": 200354,
+          "item_level": 421,
+          "icon": "inv_leather_raiddruidprimalist_d_01_helm",
+          "name": "Lost Landcaller's Antlers",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": true,
+          "azerite_powers": [
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            null
+          ],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "tier": "29",
+          "gems": [],
+          "bonuses": [
+            6652,
+            7937,
+            9130,
+            7977,
+            8828,
+            1495
+          ]
+        },
+        "neck": {
+          "item_id": 206180,
+          "item_level": 437,
+          "icon": "inv_jewelry_necklace_35",
+          "name": "Choker of Stolen Thunder",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [
+            192982,
+            192922,
+            192922
+          ],
+          "bonuses": [
+            6652,
+            9144,
+            9329,
+            1659,
+            8767,
+            9477,
+            8782
+          ]
+        },
+        "shoulder": {
+          "item_id": 200356,
+          "item_level": 421,
+          "icon": "inv_leather_raiddruidprimalist_d_01_shoulder",
+          "name": "Lost Landcaller's Mantle",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "tier": "29",
+          "gems": [],
+          "bonuses": [
+            6652,
+            9130,
+            7977,
+            8826,
+            1495
+          ]
+        },
+        "back": {
+          "item_id": 193511,
+          "item_level": 421,
+          "enchant": 6598,
+          "icon": "inv_cloth_dragonpvp_d_01_cape",
+          "name": "Vibrant Wildercloth Shawl",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [],
+          "bonuses": [
+            8836,
+            8840,
+            8902,
+            9405,
+            8846,
+            8791,
+            8174,
+            9365
+          ]
+        },
+        "chest": {
+          "item_id": 200351,
+          "item_level": 415,
+          "enchant": 6625,
+          "icon": "inv_leather_raiddruidprimalist_d_01_chest",
+          "name": "Lost Landcaller's Robes",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": true,
+          "azerite_powers": [
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            null
+          ],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "tier": "29",
+          "gems": [],
+          "bonuses": [
+            6652,
+            7977,
+            8830,
+            8973,
+            1492,
+            8767
+          ]
+        },
+        "waist": {
+          "item_id": 136776,
+          "item_level": 421,
+          "icon": "inv_belt_leather_legiondungeon_c_01",
+          "name": "Bjorn's Hunting Strap",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [
+            192922
+          ],
+          "bonuses": [
+            9130,
+            7977,
+            42,
+            7935,
+            8822,
+            8818,
+            9144,
+            3300,
+            8767
+          ]
+        },
+        "shirt": {
+          "item_id": 52019,
+          "item_level": 1,
+          "icon": "inv_misc_ribbon_01",
+          "name": "Precious' Ribbon",
+          "item_quality": 2,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [],
+          "bonuses": []
+        },
+        "wrist": {
+          "item_id": 159324,
+          "item_level": 428,
+          "enchant": 6580,
+          "icon": "inv_bracer_leather_zandalardungeon_c_01",
+          "name": "Blood Elder's Bindings",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [
+            192922
+          ],
+          "bonuses": [
+            9330,
+            6652,
+            9413,
+            9223,
+            9220,
+            9144,
+            3298,
+            8767
+          ]
+        },
+        "hands": {
+          "item_id": 200353,
+          "item_level": 421,
+          "icon": "inv_leather_raiddruidprimalist_d_01_glove",
+          "name": "Lost Landcaller's Claws",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "tier": "29",
+          "gems": [],
+          "bonuses": [
+            6652,
+            8829,
+            9130,
+            7977,
+            1498,
+            8767
+          ]
+        },
+        "legs": {
+          "item_id": 193408,
+          "item_level": 447,
+          "enchant": 6490,
+          "icon": "inv_pant_leather_dragonpvp_d_01",
+          "name": "Life-Bound Trousers",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [],
+          "bonuses": [
+            8836,
+            8840,
+            8902,
+            9405,
+            9376,
+            8797,
+            8960,
+            8791,
+            9366
+          ]
+        },
+        "feet": {
+          "item_id": 193451,
+          "item_level": 437,
+          "enchant": 6607,
+          "icon": "inv_leather_dragondungeon_c_01_boot",
+          "name": "Slimy Expulsion Boots",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [],
+          "bonuses": [
+            8836,
+            8840,
+            8902,
+            8960,
+            9405,
+            9373,
+            9366
+          ]
+        },
+        "finger1": {
+          "item_id": 134542,
+          "item_level": 421,
+          "enchant": 6562,
+          "icon": "inv_70_dungeon_ring7d",
+          "name": "Jeweled Signet of Melandrus",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [
+            192922
+          ],
+          "bonuses": [
+            9130,
+            7977,
+            6652,
+            9144,
+            3300,
+            8767,
+            8780
+          ]
+        },
+        "finger2": {
+          "item_id": 159463,
+          "item_level": 424,
+          "enchant": 6550,
+          "icon": "inv_ring_80_05a",
+          "name": "Loop of Pulsing Veins",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [
+            192922
+          ],
+          "bonuses": [
+            9324,
+            6652,
+            9413,
+            9144,
+            3294,
+            8767
+          ]
+        },
+        "trinket1": {
+          "item_id": 193701,
+          "item_level": 415,
+          "icon": "inv_misc_enggizmos_18",
+          "name": "Algeth'ar Puzzle Box",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [],
+          "bonuses": [
+            7977,
+            6652,
+            9144,
+            8973,
+            1637,
+            8767
+          ]
+        },
+        "trinket2": {
+          "item_id": 136975,
+          "item_level": 415,
+          "icon": "ability_warrior_bloodnova",
+          "name": "Hunger of the Pack",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [],
+          "bonuses": [
+            7977,
+            6652,
+            9144,
+            8973,
+            3294,
+            8767
+          ]
+        },
+        "mainhand": {
+          "item_id": 159655,
+          "item_level": 434,
+          "enchant": 6649,
+          "icon": "inv_polearm_2h_zandalariguard_b_01",
+          "name": "Vile Exsanguinator",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "domination_shards": [],
+          "gems": [],
+          "bonuses": [
+            6652,
+            9147,
+            9328,
+            3304,
+            8767
+          ]
+        }
+      }
+    },
+    "seasonSlug": "season-7.3.2",
+    "mythicPlusScores": {
+      "all": {
+        "score": 1368.8958347372695,
+        "scoreColor": "#ffffff",
+        "runs": [
+          {
+            "zoneId": 7546,
+            "keystoneRunId": 4280279,
+            "mythicLevel": 15,
+            "clearTimeMs": 1437159,
+            "score": 167.15345351007187
+          },
+          {
+            "zoneId": 7787,
+            "keystoneRunId": 4178944,
+            "mythicLevel": 16,
+            "clearTimeMs": 2927398,
+            "score": 136.11304961643478
+          },
+          {
+            "zoneId": 7812,
+            "keystoneRunId": 7918587,
+            "mythicLevel": 15,
+            "clearTimeMs": 1155173,
+            "score": 163.7372461086827
+          },
+          {
+            "zoneId": 7855,
+            "keystoneRunId": 3107789,
+            "mythicLevel": 17,
+            "clearTimeMs": 2293468,
+            "score": 197.3392692504205
+          },
+          {
+            "zoneId": 8040,
+            "keystoneRunId": 5885106,
+            "mythicLevel": 14,
+            "clearTimeMs": 1483158,
+            "score": 152.2055367022942
+          },
+          {
+            "zoneId": 8079,
+            "keystoneRunId": 8586315,
+            "mythicLevel": 12,
+            "clearTimeMs": 1797690,
+            "score": 121.01854168849562
+          },
+          {
+            "zoneId": 8910,
+            "keystoneRunId": 5885012,
+            "mythicLevel": 16,
+            "clearTimeMs": 3054998,
+            "score": 137.07297524191597
+          },
+          {
+            "zoneId": 999998,
+            "keystoneRunId": 161760,
+            "mythicLevel": 12,
+            "clearTimeMs": 2142618,
+            "score": 121.85815765662558
+          },
+          {
+            "zoneId": 999999,
+            "keystoneRunId": 3394279,
+            "mythicLevel": 17,
+            "clearTimeMs": 2241539,
+            "score": 172.39760496232805
+          }
+        ],
+        "alternateRuns": [],
+        "rawRuns": [
+          {
+            "id": 4280279,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 11022145,
+            "keystone_platoon_id": null,
+            "zone_id": 7546,
+            "faction": "alliance",
+            "mythic_level": 15,
+            "clear_time_ms": 1437159,
+            "par_time_ms": 1980999,
+            "period": 632,
+            "completed_at": "2018-02-12T05:03:59.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 12,
+            "affix_2_id": 10,
+            "created_at": "2018-02-12T05:49:26.000Z",
+            "updated_at": "2018-02-12T05:49:26.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 11022145,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 4178944,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 10930165,
+            "keystone_platoon_id": null,
+            "zone_id": 7787,
+            "faction": "alliance",
+            "mythic_level": 16,
+            "clear_time_ms": 2927398,
+            "par_time_ms": 1980999,
+            "period": 632,
+            "completed_at": "2018-02-11T02:11:28.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 12,
+            "affix_2_id": 10,
+            "created_at": "2018-02-11T02:58:01.000Z",
+            "updated_at": "2018-02-11T02:58:01.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 10930165,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 7918587,
+            "region_id": 2,
+            "realm_id": 452,
+            "keystone_team_id": 14624050,
+            "keystone_platoon_id": null,
+            "zone_id": 7812,
+            "faction": "alliance",
+            "mythic_level": 15,
+            "clear_time_ms": 1155173,
+            "par_time_ms": 1440999,
+            "period": 640,
+            "completed_at": "2018-04-07T02:26:32.000Z",
+            "affix_0_id": 5,
+            "affix_1_id": 14,
+            "affix_2_id": 10,
+            "created_at": "2018-04-07T03:36:58.000Z",
+            "updated_at": "2018-04-07T03:36:59.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 14624050,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 3107789,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 9948972,
+            "keystone_platoon_id": null,
+            "zone_id": 7855,
+            "faction": "alliance",
+            "mythic_level": 17,
+            "clear_time_ms": 2293468,
+            "par_time_ms": 2700999,
+            "period": 630,
+            "completed_at": "2018-01-26T04:34:19.000Z",
+            "affix_0_id": 7,
+            "affix_1_id": 2,
+            "affix_2_id": 10,
+            "created_at": "2018-01-26T05:01:43.000Z",
+            "updated_at": "2018-01-26T05:01:44.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 9948972,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 5885106,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 12739933,
+            "keystone_platoon_id": null,
+            "zone_id": 8040,
+            "faction": "alliance",
+            "mythic_level": 14,
+            "clear_time_ms": 1483158,
+            "par_time_ms": 2100999,
+            "period": 635,
+            "completed_at": "2018-03-06T02:09:59.000Z",
+            "affix_0_id": 6,
+            "affix_1_id": 3,
+            "affix_2_id": 9,
+            "created_at": "2018-03-06T03:39:38.000Z",
+            "updated_at": "2018-03-06T03:39:39.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 12739933,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 8586315,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 15246716,
+            "keystone_platoon_id": null,
+            "zone_id": 8079,
+            "faction": "alliance",
+            "mythic_level": 12,
+            "clear_time_ms": 1797690,
+            "par_time_ms": 1800999,
+            "period": 641,
+            "completed_at": "2018-04-18T00:43:30.000Z",
+            "affix_0_id": 7,
+            "affix_1_id": 2,
+            "affix_2_id": 10,
+            "created_at": "2018-04-18T01:34:17.000Z",
+            "updated_at": "2018-04-18T01:34:18.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 15246716,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 5885012,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 12739845,
+            "keystone_platoon_id": null,
+            "zone_id": 8910,
+            "faction": "alliance",
+            "mythic_level": 16,
+            "clear_time_ms": 3054998,
+            "par_time_ms": 2100999,
+            "period": 635,
+            "completed_at": "2018-03-06T03:08:06.000Z",
+            "affix_0_id": 6,
+            "affix_1_id": 3,
+            "affix_2_id": 9,
+            "created_at": "2018-03-06T03:39:32.000Z",
+            "updated_at": "2018-03-06T03:39:32.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 12739845,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 161760,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 3309598,
+            "keystone_platoon_id": null,
+            "zone_id": 999998,
+            "faction": "alliance",
+            "mythic_level": 12,
+            "clear_time_ms": 2142618,
+            "par_time_ms": 2340999,
+            "period": 622,
+            "completed_at": "2017-12-02T04:22:26.000Z",
+            "affix_0_id": 11,
+            "affix_1_id": 14,
+            "affix_2_id": 10,
+            "created_at": "2017-12-02T05:31:52.000Z",
+            "updated_at": "2017-12-02T05:31:52.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 3309598,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 3394279,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 10210118,
+            "keystone_platoon_id": null,
+            "zone_id": 999999,
+            "faction": "alliance",
+            "mythic_level": 17,
+            "clear_time_ms": 2241539,
+            "par_time_ms": 2100999,
+            "period": 631,
+            "completed_at": "2018-02-01T04:24:19.000Z",
+            "affix_0_id": 5,
+            "affix_1_id": 3,
+            "affix_2_id": 9,
+            "created_at": "2018-02-01T05:16:14.000Z",
+            "updated_at": "2018-02-01T05:16:16.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 10210118,
+            "keystonePlatoonId": null
+          }
+        ],
+        "rawAlternateRuns": []
+      },
+      "dps": {
+        "score": 420.6340343497417,
+        "scoreColor": "#ffffff",
+        "runs": [
+          {
+            "zoneId": 7812,
+            "keystoneRunId": 7918587,
+            "mythicLevel": 15,
+            "clearTimeMs": 1155173,
+            "score": 163.7372461086827
+          },
+          {
+            "zoneId": 8040,
+            "keystoneRunId": 11782331,
+            "mythicLevel": 13,
+            "clearTimeMs": 1179480,
+            "score": 142.0632343435564
+          },
+          {
+            "zoneId": 999998,
+            "keystoneRunId": 11782337,
+            "mythicLevel": 11,
+            "clearTimeMs": 1535177,
+            "score": 114.83355389750263
+          }
+        ],
+        "alternateRuns": [],
+        "rawRuns": [
+          {
+            "id": 7918587,
+            "region_id": 2,
+            "realm_id": 452,
+            "keystone_team_id": 14624050,
+            "keystone_platoon_id": null,
+            "zone_id": 7812,
+            "faction": "alliance",
+            "mythic_level": 15,
+            "clear_time_ms": 1155173,
+            "par_time_ms": 1440999,
+            "period": 640,
+            "completed_at": "2018-04-07T02:26:32.000Z",
+            "affix_0_id": 5,
+            "affix_1_id": 14,
+            "affix_2_id": 10,
+            "created_at": "2018-04-07T03:36:58.000Z",
+            "updated_at": "2018-04-07T03:36:59.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 14624050,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 11782331,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 18231001,
+            "keystone_platoon_id": null,
+            "zone_id": 8040,
+            "faction": "alliance",
+            "mythic_level": 13,
+            "clear_time_ms": 1179480,
+            "par_time_ms": 2100999,
+            "period": 650,
+            "completed_at": "2018-06-18T01:26:12.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 4,
+            "affix_2_id": 10,
+            "created_at": "2018-06-18T01:42:38.000Z",
+            "updated_at": "2018-06-18T01:42:38.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 18231001,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 11782337,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 18231006,
+            "keystone_platoon_id": null,
+            "zone_id": 999998,
+            "faction": "alliance",
+            "mythic_level": 11,
+            "clear_time_ms": 1535177,
+            "par_time_ms": 2340999,
+            "period": 650,
+            "completed_at": "2018-06-18T00:58:49.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 4,
+            "affix_2_id": 10,
+            "created_at": "2018-06-18T01:42:41.000Z",
+            "updated_at": "2018-06-18T01:42:42.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 18231006,
+            "keystonePlatoonId": null
+          }
+        ],
+        "rawAlternateRuns": []
+      },
+      "healer": {
+        "score": 94.3759109228304,
+        "scoreColor": "#ffffff",
+        "runs": [
+          {
+            "zoneId": 8910,
+            "keystoneRunId": 2530643,
+            "mythicLevel": 15,
+            "clearTimeMs": 6308647,
+            "score": 94.3759109228304
+          }
+        ],
+        "alternateRuns": [],
+        "rawRuns": [
+          {
+            "id": 2530643,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 9417513,
+            "keystone_platoon_id": null,
+            "zone_id": 8910,
+            "faction": "alliance",
+            "mythic_level": 15,
+            "clear_time_ms": 6308647,
+            "par_time_ms": 2100999,
+            "period": 628,
+            "completed_at": "2018-01-13T23:22:38.000Z",
+            "affix_0_id": 5,
+            "affix_1_id": 14,
+            "affix_2_id": 10,
+            "created_at": "2018-01-14T00:13:54.000Z",
+            "updated_at": "2018-01-14T00:13:54.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 9417513,
+            "keystonePlatoonId": null
+          }
+        ],
+        "rawAlternateRuns": []
+      },
+      "tank": {
+        "score": 1205.1585886285866,
+        "scoreColor": "#ffffff",
+        "runs": [
+          {
+            "zoneId": 7546,
+            "keystoneRunId": 4280279,
+            "mythicLevel": 15,
+            "clearTimeMs": 1437159,
+            "score": 167.15345351007187
+          },
+          {
+            "zoneId": 7787,
+            "keystoneRunId": 4178944,
+            "mythicLevel": 16,
+            "clearTimeMs": 2927398,
+            "score": 136.11304961643478
+          },
+          {
+            "zoneId": 7855,
+            "keystoneRunId": 3107789,
+            "mythicLevel": 17,
+            "clearTimeMs": 2293468,
+            "score": 197.3392692504205
+          },
+          {
+            "zoneId": 8040,
+            "keystoneRunId": 5885106,
+            "mythicLevel": 14,
+            "clearTimeMs": 1483158,
+            "score": 152.2055367022942
+          },
+          {
+            "zoneId": 8079,
+            "keystoneRunId": 8586315,
+            "mythicLevel": 12,
+            "clearTimeMs": 1797690,
+            "score": 121.01854168849562
+          },
+          {
+            "zoneId": 8910,
+            "keystoneRunId": 5885012,
+            "mythicLevel": 16,
+            "clearTimeMs": 3054998,
+            "score": 137.07297524191597
+          },
+          {
+            "zoneId": 999998,
+            "keystoneRunId": 161760,
+            "mythicLevel": 12,
+            "clearTimeMs": 2142618,
+            "score": 121.85815765662558
+          },
+          {
+            "zoneId": 999999,
+            "keystoneRunId": 3394279,
+            "mythicLevel": 17,
+            "clearTimeMs": 2241539,
+            "score": 172.39760496232805
+          }
+        ],
+        "alternateRuns": [],
+        "rawRuns": [
+          {
+            "id": 4280279,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 11022145,
+            "keystone_platoon_id": null,
+            "zone_id": 7546,
+            "faction": "alliance",
+            "mythic_level": 15,
+            "clear_time_ms": 1437159,
+            "par_time_ms": 1980999,
+            "period": 632,
+            "completed_at": "2018-02-12T05:03:59.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 12,
+            "affix_2_id": 10,
+            "created_at": "2018-02-12T05:49:26.000Z",
+            "updated_at": "2018-02-12T05:49:26.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 11022145,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 4178944,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 10930165,
+            "keystone_platoon_id": null,
+            "zone_id": 7787,
+            "faction": "alliance",
+            "mythic_level": 16,
+            "clear_time_ms": 2927398,
+            "par_time_ms": 1980999,
+            "period": 632,
+            "completed_at": "2018-02-11T02:11:28.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 12,
+            "affix_2_id": 10,
+            "created_at": "2018-02-11T02:58:01.000Z",
+            "updated_at": "2018-02-11T02:58:01.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 10930165,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 3107789,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 9948972,
+            "keystone_platoon_id": null,
+            "zone_id": 7855,
+            "faction": "alliance",
+            "mythic_level": 17,
+            "clear_time_ms": 2293468,
+            "par_time_ms": 2700999,
+            "period": 630,
+            "completed_at": "2018-01-26T04:34:19.000Z",
+            "affix_0_id": 7,
+            "affix_1_id": 2,
+            "affix_2_id": 10,
+            "created_at": "2018-01-26T05:01:43.000Z",
+            "updated_at": "2018-01-26T05:01:44.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 9948972,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 5885106,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 12739933,
+            "keystone_platoon_id": null,
+            "zone_id": 8040,
+            "faction": "alliance",
+            "mythic_level": 14,
+            "clear_time_ms": 1483158,
+            "par_time_ms": 2100999,
+            "period": 635,
+            "completed_at": "2018-03-06T02:09:59.000Z",
+            "affix_0_id": 6,
+            "affix_1_id": 3,
+            "affix_2_id": 9,
+            "created_at": "2018-03-06T03:39:38.000Z",
+            "updated_at": "2018-03-06T03:39:39.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 12739933,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 8586315,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 15246716,
+            "keystone_platoon_id": null,
+            "zone_id": 8079,
+            "faction": "alliance",
+            "mythic_level": 12,
+            "clear_time_ms": 1797690,
+            "par_time_ms": 1800999,
+            "period": 641,
+            "completed_at": "2018-04-18T00:43:30.000Z",
+            "affix_0_id": 7,
+            "affix_1_id": 2,
+            "affix_2_id": 10,
+            "created_at": "2018-04-18T01:34:17.000Z",
+            "updated_at": "2018-04-18T01:34:18.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 15246716,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 5885012,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 12739845,
+            "keystone_platoon_id": null,
+            "zone_id": 8910,
+            "faction": "alliance",
+            "mythic_level": 16,
+            "clear_time_ms": 3054998,
+            "par_time_ms": 2100999,
+            "period": 635,
+            "completed_at": "2018-03-06T03:08:06.000Z",
+            "affix_0_id": 6,
+            "affix_1_id": 3,
+            "affix_2_id": 9,
+            "created_at": "2018-03-06T03:39:32.000Z",
+            "updated_at": "2018-03-06T03:39:32.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 12739845,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 161760,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 3309598,
+            "keystone_platoon_id": null,
+            "zone_id": 999998,
+            "faction": "alliance",
+            "mythic_level": 12,
+            "clear_time_ms": 2142618,
+            "par_time_ms": 2340999,
+            "period": 622,
+            "completed_at": "2017-12-02T04:22:26.000Z",
+            "affix_0_id": 11,
+            "affix_1_id": 14,
+            "affix_2_id": 10,
+            "created_at": "2017-12-02T05:31:52.000Z",
+            "updated_at": "2017-12-02T05:31:52.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 3309598,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 3394279,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 10210118,
+            "keystone_platoon_id": null,
+            "zone_id": 999999,
+            "faction": "alliance",
+            "mythic_level": 17,
+            "clear_time_ms": 2241539,
+            "par_time_ms": 2100999,
+            "period": 631,
+            "completed_at": "2018-02-01T04:24:19.000Z",
+            "affix_0_id": 5,
+            "affix_1_id": 3,
+            "affix_2_id": 9,
+            "created_at": "2018-02-01T05:16:14.000Z",
+            "updated_at": "2018-02-01T05:16:16.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 10210118,
+            "keystonePlatoonId": null
+          }
+        ],
+        "rawAlternateRuns": []
+      },
+      "spec_0": {
+        "score": 0,
+        "scoreColor": "#ffffff",
+        "runs": [],
+        "alternateRuns": [],
+        "rawRuns": [],
+        "rawAlternateRuns": []
+      },
+      "spec_1": {
+        "score": 420.6340343497417,
+        "scoreColor": "#ffffff",
+        "runs": [
+          {
+            "zoneId": 7812,
+            "keystoneRunId": 7918587,
+            "mythicLevel": 15,
+            "clearTimeMs": 1155173,
+            "score": 163.7372461086827
+          },
+          {
+            "zoneId": 8040,
+            "keystoneRunId": 11782331,
+            "mythicLevel": 13,
+            "clearTimeMs": 1179480,
+            "score": 142.0632343435564
+          },
+          {
+            "zoneId": 999998,
+            "keystoneRunId": 11782337,
+            "mythicLevel": 11,
+            "clearTimeMs": 1535177,
+            "score": 114.83355389750263
+          }
+        ],
+        "alternateRuns": [],
+        "rawRuns": [
+          {
+            "id": 7918587,
+            "region_id": 2,
+            "realm_id": 452,
+            "keystone_team_id": 14624050,
+            "keystone_platoon_id": null,
+            "zone_id": 7812,
+            "faction": "alliance",
+            "mythic_level": 15,
+            "clear_time_ms": 1155173,
+            "par_time_ms": 1440999,
+            "period": 640,
+            "completed_at": "2018-04-07T02:26:32.000Z",
+            "affix_0_id": 5,
+            "affix_1_id": 14,
+            "affix_2_id": 10,
+            "created_at": "2018-04-07T03:36:58.000Z",
+            "updated_at": "2018-04-07T03:36:59.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 14624050,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 11782331,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 18231001,
+            "keystone_platoon_id": null,
+            "zone_id": 8040,
+            "faction": "alliance",
+            "mythic_level": 13,
+            "clear_time_ms": 1179480,
+            "par_time_ms": 2100999,
+            "period": 650,
+            "completed_at": "2018-06-18T01:26:12.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 4,
+            "affix_2_id": 10,
+            "created_at": "2018-06-18T01:42:38.000Z",
+            "updated_at": "2018-06-18T01:42:38.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 18231001,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 11782337,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 18231006,
+            "keystone_platoon_id": null,
+            "zone_id": 999998,
+            "faction": "alliance",
+            "mythic_level": 11,
+            "clear_time_ms": 1535177,
+            "par_time_ms": 2340999,
+            "period": 650,
+            "completed_at": "2018-06-18T00:58:49.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 4,
+            "affix_2_id": 10,
+            "created_at": "2018-06-18T01:42:41.000Z",
+            "updated_at": "2018-06-18T01:42:42.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 18231006,
+            "keystonePlatoonId": null
+          }
+        ],
+        "rawAlternateRuns": []
+      },
+      "spec_2": {
+        "score": 1120.5626692381556,
+        "scoreColor": "#ffffff",
+        "runs": [
+          {
+            "zoneId": 7546,
+            "keystoneRunId": 4280279,
+            "mythicLevel": 15,
+            "clearTimeMs": 1437159,
+            "score": 167.15345351007187
+          },
+          {
+            "zoneId": 7787,
+            "keystoneRunId": 4178944,
+            "mythicLevel": 16,
+            "clearTimeMs": 2927398,
+            "score": 136.11304961643478
+          },
+          {
+            "zoneId": 7855,
+            "keystoneRunId": 6672949,
+            "mythicLevel": 15,
+            "clearTimeMs": 1843886,
+            "score": 167.75120311665586
+          },
+          {
+            "zoneId": 8040,
+            "keystoneRunId": 5885106,
+            "mythicLevel": 14,
+            "clearTimeMs": 1483158,
+            "score": 152.2055367022942
+          },
+          {
+            "zoneId": 8079,
+            "keystoneRunId": 8586315,
+            "mythicLevel": 12,
+            "clearTimeMs": 1797690,
+            "score": 121.01854168849562
+          },
+          {
+            "zoneId": 8910,
+            "keystoneRunId": 5885012,
+            "mythicLevel": 16,
+            "clearTimeMs": 3054998,
+            "score": 137.07297524191597
+          },
+          {
+            "zoneId": 999998,
+            "keystoneRunId": 8773588,
+            "mythicLevel": 6,
+            "clearTimeMs": 1310878,
+            "score": 66.85030439995917
+          },
+          {
+            "zoneId": 999999,
+            "keystoneRunId": 3394279,
+            "mythicLevel": 17,
+            "clearTimeMs": 2241539,
+            "score": 172.39760496232805
+          }
+        ],
+        "alternateRuns": [],
+        "rawRuns": [
+          {
+            "id": 4280279,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 11022145,
+            "keystone_platoon_id": null,
+            "zone_id": 7546,
+            "faction": "alliance",
+            "mythic_level": 15,
+            "clear_time_ms": 1437159,
+            "par_time_ms": 1980999,
+            "period": 632,
+            "completed_at": "2018-02-12T05:03:59.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 12,
+            "affix_2_id": 10,
+            "created_at": "2018-02-12T05:49:26.000Z",
+            "updated_at": "2018-02-12T05:49:26.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 11022145,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 4178944,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 10930165,
+            "keystone_platoon_id": null,
+            "zone_id": 7787,
+            "faction": "alliance",
+            "mythic_level": 16,
+            "clear_time_ms": 2927398,
+            "par_time_ms": 1980999,
+            "period": 632,
+            "completed_at": "2018-02-11T02:11:28.000Z",
+            "affix_0_id": 8,
+            "affix_1_id": 12,
+            "affix_2_id": 10,
+            "created_at": "2018-02-11T02:58:01.000Z",
+            "updated_at": "2018-02-11T02:58:01.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 10930165,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 6672949,
+            "region_id": 2,
+            "realm_id": 331,
+            "keystone_team_id": 13473409,
+            "keystone_platoon_id": null,
+            "zone_id": 7855,
+            "faction": "alliance",
+            "mythic_level": 15,
+            "clear_time_ms": 1843886,
+            "par_time_ms": 2700999,
+            "period": 637,
+            "completed_at": "2018-03-19T00:09:30.000Z",
+            "affix_0_id": 7,
+            "affix_1_id": 12,
+            "affix_2_id": 9,
+            "created_at": "2018-03-19T00:50:05.000Z",
+            "updated_at": "2018-03-19T00:50:05.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 13473409,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 5885106,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 12739933,
+            "keystone_platoon_id": null,
+            "zone_id": 8040,
+            "faction": "alliance",
+            "mythic_level": 14,
+            "clear_time_ms": 1483158,
+            "par_time_ms": 2100999,
+            "period": 635,
+            "completed_at": "2018-03-06T02:09:59.000Z",
+            "affix_0_id": 6,
+            "affix_1_id": 3,
+            "affix_2_id": 9,
+            "created_at": "2018-03-06T03:39:38.000Z",
+            "updated_at": "2018-03-06T03:39:39.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 12739933,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 8586315,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 15246716,
+            "keystone_platoon_id": null,
+            "zone_id": 8079,
+            "faction": "alliance",
+            "mythic_level": 12,
+            "clear_time_ms": 1797690,
+            "par_time_ms": 1800999,
+            "period": 641,
+            "completed_at": "2018-04-18T00:43:30.000Z",
+            "affix_0_id": 7,
+            "affix_1_id": 2,
+            "affix_2_id": 10,
+            "created_at": "2018-04-18T01:34:17.000Z",
+            "updated_at": "2018-04-18T01:34:18.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 15246716,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 5885012,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 12739845,
+            "keystone_platoon_id": null,
+            "zone_id": 8910,
+            "faction": "alliance",
+            "mythic_level": 16,
+            "clear_time_ms": 3054998,
+            "par_time_ms": 2100999,
+            "period": 635,
+            "completed_at": "2018-03-06T03:08:06.000Z",
+            "affix_0_id": 6,
+            "affix_1_id": 3,
+            "affix_2_id": 9,
+            "created_at": "2018-03-06T03:39:32.000Z",
+            "updated_at": "2018-03-06T03:39:32.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 12739845,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 8773588,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 15419941,
+            "keystone_platoon_id": null,
+            "zone_id": 999998,
+            "faction": "alliance",
+            "mythic_level": 6,
+            "clear_time_ms": 1310878,
+            "par_time_ms": 2340999,
+            "period": 642,
+            "completed_at": "2018-04-21T02:33:17.000Z",
+            "affix_0_id": 7,
+            "affix_1_id": 2,
+            "affix_2_id": 10,
+            "created_at": "2018-04-21T03:03:15.000Z",
+            "updated_at": "2018-04-21T03:03:16.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 15419941,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 3394279,
+            "region_id": 2,
+            "realm_id": 419,
+            "keystone_team_id": 10210118,
+            "keystone_platoon_id": null,
+            "zone_id": 999999,
+            "faction": "alliance",
+            "mythic_level": 17,
+            "clear_time_ms": 2241539,
+            "par_time_ms": 2100999,
+            "period": 631,
+            "completed_at": "2018-02-01T04:24:19.000Z",
+            "affix_0_id": 5,
+            "affix_1_id": 3,
+            "affix_2_id": 9,
+            "created_at": "2018-02-01T05:16:14.000Z",
+            "updated_at": "2018-02-01T05:16:16.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 10210118,
+            "keystonePlatoonId": null
+          }
+        ],
+        "rawAlternateRuns": []
+      },
+      "spec_3": {
+        "score": 0,
+        "scoreColor": "#ffffff",
+        "runs": [],
+        "alternateRuns": [],
+        "rawRuns": [],
+        "rawAlternateRuns": []
+      }
+    },
+    "bestMythicPlusScore": {
+      "score": 1368.9,
+      "scoreColor": "#ffffff",
+      "season": {
+        "slug": "season-7.3.2",
+        "name": "Season 7.3.2"
+      }
+    },
+    "bestMythicPlusTeamScore": null,
+    "keystoneAggregateStats": [
+      {
+        "level": 5,
+        "count": 2
+      },
+      {
+        "level": 10,
+        "count": 6
+      },
+      {
+        "level": 15,
+        "count": 7
+      }
+    ],
+    "previousMythicPlusScore": {
+      "score": 2727.78,
+      "scoreColor": "#ffffff",
+      "season": {
+        "slug": "season-df-1",
+        "name": "DF Season 1"
+      }
+    },
+    "mythicPlusRanks": {
+      "overall": {
+        "world": 417554,
+        "region": 134726,
+        "realm": 4208
+      },
+      "class": {
+        "world": 57304,
+        "region": 18697,
+        "realm": 613
+      },
+      "tank": {
+        "world": 100836,
+        "region": 33033,
+        "realm": 1028
+      },
+      "class_tank": {
+        "world": 16510,
+        "region": 5665,
+        "realm": 175
+      },
+      "healer": {
+        "world": 433029,
+        "region": 163808,
+        "realm": 5005
+      },
+      "class_healer": {
+        "world": 113136,
+        "region": 42126,
+        "realm": 1295
+      },
+      "dps": {
+        "world": 769187,
+        "region": 274338,
+        "realm": 8068
+      },
+      "class_dps": {
+        "world": 67274,
+        "region": 24056,
+        "realm": 771
+      }
+    },
+    "season": "season-7.3.2",
+    "tier": "21",
+    "isMissingPersonaFields": false,
+    "isTournamentProfile": false,
+    "expansionData": {
+      "expansionId": 9
+    }
+  }
+}

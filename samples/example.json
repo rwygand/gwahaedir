@@ -1,0 +1,72 @@
+{
+  "runs": [
+    {
+      "summary": {
+        "season": "season-df-2",
+        "status": "finished",
+        "dungeon": {
+          "id": 13968,
+          "name": "Uldaman: Legacy of Tyr",
+          "short_name": "ULD",
+          "slug": "uldaman-legacy-of-tyr",
+          "expansion_id": 9,
+          "icon_url": "/images/wow/icons/large/achievement_dungeon_uldaman.jpg",
+          "patch": "10.0.2",
+          "keystone_timer_ms": 2100999,
+          "num_bosses": 5,
+          "group_finder_activity_ids": [
+            1185,
+            1186,
+            1187,
+            1188,
+            1194
+          ]
+        },
+        "keystone_run_id": 1889063,
+        "mythic_level": 16,
+        "clear_time_ms": 1972948,
+        "keystone_time_ms": 2100999,
+        "completed_at": "2023-05-15T02:29:18.000Z",
+        "num_chests": 1,
+        "time_remaining_ms": 128051,
+        "logged_run_id": 803298,
+        "videos": [],
+        "weekly_modifiers": [
+          {
+            "id": 9,
+            "icon": "achievement_boss_archaedas",
+            "name": "Tyrannical",
+            "description": "Bosses have 30% more health. Bosses and their minions inflict up to 15% increased damage."
+          },
+          {
+            "id": 124,
+            "icon": "spell_nature_cyclone",
+            "name": "Storming",
+            "description": "While in combat, enemies periodically summon damaging whirlwinds."
+          },
+          {
+            "id": 6,
+            "icon": "ability_warrior_focusedrage",
+            "name": "Raging",
+            "description": "Non-boss enemies enrage at 30% health remaining, temporarily granting immunity to crowd control effects."
+          }
+        ],
+        "num_modifiers_active": 3,
+        "faction": "mixed",
+        "deleted_at": null,
+        "role": "dps",
+        "doesVideoExist": false
+      },
+      "score": 142.762
+    }
+  ],
+  "ui": {
+    "season": "season-df-2",
+    "characterId": 107062664,
+    "dungeonId": 13968,
+    "role": "all",
+    "mode": "all",
+    "affixes": "all",
+    "date": "all"
+  }
+}

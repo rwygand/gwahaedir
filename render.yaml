@@ -9,15 +9,22 @@ services:
     env: rust
     repo: https://github.com/rwygand/gwahaedir.git
     branch: main
+    buildCommand: cargo build --release
+    startCommand: cargo run --release
     envVars:
       - key: REDIS_HOST
         fromService:
           type: redis
           name: gwahaedir
-          property: host # available properties are listed below
+          property: host
       - key: REDIS_PORT
         fromService:
           type: redis
           name: gwahaedir
           property: port
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: gwahaedir
+          property: connectionString
 
