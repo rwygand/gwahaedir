@@ -1,5 +1,3 @@
-use serde::{Deserialize, Serialize};
-
 #[allow(dead_code)]
 pub enum Dungeons {
     Uldaman = 13968,
@@ -64,50 +62,15 @@ impl RaiderIO {
     //     }
     // }
 
-    pub async fn get_roster(&self) -> Result<GuildRoster, Box<dyn std::error::Error>> {
+    pub async fn get_roster(&self) -> Result<String, Box<dyn std::error::Error>> {
         let url = "https://raider.io/api/v1/guilds/profile?region=us&realm=proudmoore&name=power%20word%20taint&fields=members";
 
         let resp = self.client.get(url)
             .send()
             .await?
-            .json::<GuildRoster>()
+            .text()
             .await?;
 
         Ok(resp)
     }
-}
-
-#[derive(Debug, Deserialize, Serialize)]
-pub struct GuildRoster {
-    pub name: String,
-    pub faction: String,
-    pub region: String,
-    pub realm: String,
-    pub last_crawled_at: String,
-    pub profile_url: String,
-    pub members: Vec<Member>
-}
-
-#[derive(Debug, Deserialize, Serialize)]
-pub struct Member {
-    pub rank: i32,
-    pub character: Character,
-}
-
-#[derive(Debug, Deserialize, Serialize)]
-pub struct Character {
-    pub name: String,
-    pub race: String,
-    pub class: String,
-    pub active_spec_name: Option<String>,
-    pub active_spec_role: Option<String>,
-    pub gender: String,
-    pub faction: String,
-    achievement_points: u32,
-    honorable_kills: u32,
-    region: String,
-    realm: String,
-    last_crawled_at: String,
-    profile_url: String,
-    profile_banner: String
 }

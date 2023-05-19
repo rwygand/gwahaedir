@@ -1,16 +1,21 @@
 mod raider_io;
+mod guild_roster;
+use serde::{Deserialize, Serialize};
 
 #[macro_use] extern crate rocket;
 use std::collections::HashMap;
-use deadpool_redis::redis::{AsyncCommands, RedisResult};
 use rocket_dyn_templates::Template;
 use rocket_db_pools::Database;
 use rocket::{launch, get};
+use rocket::response::status::NotFound;
 use rocket_db_pools::Connection;
 
 #[derive(Database)]
 #[database("gwahaedir")]
 pub struct RedisPool(deadpool_redis::Pool);
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Error(String);
 
 #[get("/")]
 fn index() -> Template {
@@ -19,12 +24,12 @@ fn index() -> Template {
 }
 
 #[get("/roster")]
-async fn roster(mut db: Connection<RedisPool>) -> Template {
-    let roster: RedisResult<String> = db.get("guild_roster").await;
-    let rio_client = raider_io::RaiderIO::new();
-    let res = rio_client.get_roster();
-    let res = res.await;
-    Template::render("roster", res.unwrap())
+async fn roster(db: Connection<RedisPool>) -> Result<Template, NotFound<String>> {
+    let roster = guild_roster::fetch(db).await;
+    match roster {
+        Ok(roster) => Ok(Template::render("roster", roster)),
+        Err(err) => Err(NotFound(format!("Error: {}", err.to_string())))
+    }
 }
 
 #[launch]
