@@ -1,4 +1,5 @@
 mod battle_net;
+mod raider_io;
 
 #[macro_use] extern crate rocket;
 use std::collections::HashMap;
