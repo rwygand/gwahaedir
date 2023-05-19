@@ -4,12 +4,11 @@
 <style type="text/css">
     .divTable
     {
-        display:  table;
+        display: table;
         width:auto;
         background-color:#eee;
         border:1px solid  #666666;
-        border-spacing:5px;/*cellspacing:poor IE support for  this*/
-       /* border-collapse:separate;*/
+        border-spacing:5px;
     }
 
     .row
@@ -18,12 +17,16 @@
        width:auto;
     }
 
+    .header
+    {
+        font-weight:bold;
+    }
     .cell
     {
         float:left;/*fix for  buggy browsers*/
         display:table-column;
-        width:200px;
-        background-color:#ccc;
+        width:350px;
+        background-color:#ddd;
     }
 </style>
 
@@ -33,7 +36,7 @@
 
 <div class="divTable">
 
-    <div class="row">
+    <div class="row header">
       <div class="cell">Name</div>
       <div class="cell">Class</div>
       <div class="cell">Rank</div>
