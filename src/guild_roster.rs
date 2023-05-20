@@ -60,7 +60,7 @@ pub async fn fetch(mut db: Connection<RedisPool>) -> Result<GuildRoster, Box<dyn
         let rio_client = RaiderIO::new();
         data_s = rio_client.get_roster().await?;
         // best effort write to cache
-        db.set("guild_roster", &data_s).await?;
+        db.set_ex("guild_roster", &data_s, 60 * 60 * 24).await?;
         println!("Wrote guild_roster to cache!");
 
     }

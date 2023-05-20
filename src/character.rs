@@ -71,7 +71,7 @@ pub async fn fetch(mut db: Connection<RedisPool>, char_name: &str) -> Result<Cha
         let rio_client = RaiderIO::new();
         data_s = rio_client.get_character(char_name).await?;
         // best effort write to cache
-        db.set(char_name, &data_s).await?;
+        db.set_ex(char_name, &data_s, 60 * 60 * 4).await?;
         println!("Wrote character {} to cache!", char_name);
     }
 
