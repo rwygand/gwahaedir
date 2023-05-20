@@ -1,5 +1,7 @@
 mod raider_io;
 mod guild_roster;
+mod character;
+
 use serde::{Deserialize, Serialize};
 
 #[macro_use] extern crate rocket;
@@ -32,11 +34,21 @@ async fn roster(db: Connection<RedisPool>) -> Result<Template, NotFound<String>>
     }
 }
 
+#[get("/character/<char_name>")]
+async fn char_lookup(db: Connection<RedisPool>, char_name: &str) -> Result<Template, NotFound<String>> {
+    let char = character::fetch(db, char_name).await;
+    match char {
+        Ok(cd) => Ok(Template::render("character", cd)),
+        Err(err) => Err(NotFound(format!("Error: {}", err.to_string())))
+    }
+}
+
 #[launch]
 fn rocket() -> _ {
     rocket::build()
         .attach(RedisPool::init())
         .mount("/", routes![index])
         .mount("/", routes![roster])
+        .mount("/", routes![char_lookup])
         .attach(Template::fairing())
 }

@@ -46,24 +46,24 @@ impl RaiderIO {
             client: reqwest::Client::new()
         }
     }
-    // pub async fn fetch(&self) {
-    //     for c in Characters {
-    //         for d in Dungeons {
-    //             let url = format!(
-    //                 "https://raider.io/api/characters/mythic-plus-runs?season=season-df-2&characterId={}&dungeonId={}&role=all&specId=0&mode=scored&affixes=all&date=all",
-    //                 c, d
-    //             );
-    //
-    //             let body = self.client.get(url)
-    //                 .await?
-    //                 .json()
-    //                 .await?;
-    //         }
-    //     }
-    // }
 
     pub async fn get_roster(&self) -> Result<String, Box<dyn std::error::Error>> {
         let url = "https://raider.io/api/v1/guilds/profile?region=us&realm=proudmoore&name=power%20word%20taint&fields=members";
+
+        let resp = self.client.get(url)
+            .send()
+            .await?
+            .text()
+            .await?;
+
+        Ok(resp)
+    }
+
+    pub async fn get_character(&self, char_name: &str) -> Result<String, Box<dyn std::error::Error>> {
+        let url = format!(
+            "https://raider.io/api/v1/characters/profile?region=us&realm=proudmoore&name={}&fields=mythic_plus_recent_runs%2Cmythic_plus_best_runs",
+            char_name
+        );
 
         let resp = self.client.get(url)
             .send()

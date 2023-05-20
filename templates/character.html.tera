@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title>{{ name }}</title>
+<style type="text/css">
+    .divTable
+    {
+        display: table;
+        width:auto;
+        background-color:#eee;
+        border:1px solid  #666666;
+        border-spacing:5px;
+        margin-top: 20px;
+    }
+
+    .row
+    {
+       display:table-row;
+       width:auto;
+    }
+
+    .header
+    {
+        font-weight:bold;
+    }
+    .cell
+    {
+        float:left;/*fix for  buggy browsers*/
+        display:table-column;
+        width:350px;
+        background-color:#ddd;
+    }
+</style></head>
+<body>
+  <h1>{{ name }}</h1>
+
+  <div class="divTable">
+      <div class="row header">
+        <div class="cell">Recent Dungeons</div>
+        <div class="cell"></div>
+      </div>
+
+      {% for run in mythic_plus_recent_runs %}
+        <div class="row">
+          <div class="cell">
+            <a href="{{run.url}}">{{ run.dungeon }}</a> ( {{ run.mythic_level}} )
+          </div>
+        <div class="cell">{{ run.completed_at }}</div>
+        </div>
+      {% endfor %}
+  </div>
+
+  <div class="divTable">
+      <div class="row header">
+        <div class="cell">Best Dungeons</div>
+      </div>
+
+      {% for run in mythic_plus_best_runs %}
+        <div class="row">
+          <div class="cell">
+            <a href="{{run.url}}">{{ run.dungeon }}</a> ( {{ run.mythic_level}} )
+          </div>
+          <div class="cell">{{ run.completed_at }}</div>
+        </div>
+      {% endfor %}
+  </div>
+
+</body>
+</html>
