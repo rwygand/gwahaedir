@@ -4,12 +4,14 @@
   <link rel="stylesheet" href="/public/global.css">
 </head>
 <body>
-  <div class="header">
-    <img class="thumbnail" src="{{thumbnail_url|safe}}" height="84" width="84">
-    <span><h1>{{ name }}</h1></span>
-  </div>
 
-<br>
+  <div class="title">
+    <img class="thumbnail header" src="{{thumbnail_url|safe}}" height="84" width="84">
+    <div class="titletext">
+      {{ name }}
+      <div class="subtitle">{{ race }} {{ class }}</div>
+    </div>
+  </div>
 
   <div class="divTable">
       <div class="row header">
