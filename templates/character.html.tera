@@ -20,15 +20,13 @@
        <div class="nav"><a href="/roster">Roster</a></div>
     </div>
 
-
-
     <div class="content">
       <h2>Recent Dungeons</h2>
       <div class="divTable">
           {% for run in mythic_plus_recent_runs %}
             <div class="row">
               <div class="cell">
-                <a href="{{run.url}}">{{ run.dungeon }}</a> ( {{ run.mythic_level}} )
+                <a href="{{run.url}}">{{ run.dungeon }}</a> ({{ run.mythic_level}}) +{{run.num_keystone_upgrades}}
               </div>
             <div class="cell">{{ run.completed_at }}</div>
             </div>
@@ -40,7 +38,7 @@
           {% for run in mythic_plus_best_runs %}
             <div class="row">
               <div class="cell">
-                <a href="{{run.url}}">{{ run.dungeon }}</a> ( {{ run.mythic_level}} )
+                <a href="{{run.url}}">{{ run.dungeon }}</a> ({{ run.mythic_level}}) +{{run.num_keystone_upgrades}}
               </div>
               <div class="cell">{{ run.completed_at }}</div>
             </div>

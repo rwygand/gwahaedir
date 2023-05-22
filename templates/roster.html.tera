@@ -15,7 +15,7 @@
       <div class="cell">Rank</div>
     </div>
 
-    {% for member in members | sort(attribute="rank") %}
+    {% for member in members | sort(attribute="character.name") | sort(attribute="rank") %}
       {% if member.rank < 5 %}
       <div class="row">
         <div class="cell">
