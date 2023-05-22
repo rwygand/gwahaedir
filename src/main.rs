@@ -5,10 +5,10 @@ mod character;
 use serde::{Deserialize, Serialize};
 
 #[macro_use] extern crate rocket;
-use std::collections::HashMap;
 use rocket_dyn_templates::Template;
 use rocket_db_pools::Database;
 use rocket::{launch, get};
+use rocket::response::Redirect;
 use rocket::response::status::NotFound;
 use rocket_db_pools::Connection;
 
@@ -20,9 +20,8 @@ pub struct RedisPool(deadpool_redis::Pool);
 pub struct Error(String);
 
 #[get("/")]
-fn index() -> Template {
-    let context: HashMap<String, String> =  HashMap::new();
-    Template::render("index", context)
+fn index() -> Redirect {
+    Redirect::to(uri!(roster()))
 }
 
 #[get("/roster")]

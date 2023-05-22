@@ -55,7 +55,6 @@ pub async fn fetch(mut db: Connection<RedisPool>) -> Result<GuildRoster, Box<dyn
         }
     };
 
-
     if data_s.is_empty() {
         let rio_client = RaiderIO::new();
         data_s = rio_client.get_roster().await?;
