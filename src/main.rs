@@ -8,6 +8,7 @@ use serde::{Deserialize, Serialize};
 use rocket_dyn_templates::Template;
 use rocket_db_pools::Database;
 use rocket::{launch, get};
+use rocket::fs::FileServer;
 use rocket::response::Redirect;
 use rocket::response::status::NotFound;
 use rocket_db_pools::Connection;
@@ -46,6 +47,7 @@ async fn char_lookup(db: Connection<RedisPool>, char_name: &str) -> Result<Templ
 fn rocket() -> _ {
     rocket::build()
         .attach(RedisPool::init())
+        .mount("/public", FileServer::from("./static"))
         .mount("/", routes![index])
         .mount("/", routes![roster])
         .mount("/", routes![char_lookup])

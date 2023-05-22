@@ -1,36 +1,9 @@
 <html>
 <head>
 <title>Guild Roster - {{ name }} </title>
-<style type="text/css">
-    .divTable
-    {
-        display: table;
-        width:auto;
-        background-color:#eee;
-        border:1px solid  #666666;
-        border-spacing:5px;
-    }
-
-    .row
-    {
-       display:table-row;
-       width:auto;
-    }
-
-    .header
-    {
-        font-weight:bold;
-    }
-    .cell
-    {
-        float:left;/*fix for  buggy browsers*/
-        display:table-column;
-        width:350px;
-        background-color:#ddd;
-    }
-</style>
-
+<link rel="stylesheet" href="/public/global.css">
 </head>
+
 <body>
 <h1> {{ name }} </h1>
 
