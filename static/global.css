@@ -1,5 +1,45 @@
 body {
     background-color: SlateGrey;
+    font-family: sans-serif;
+}
+
+.title
+{
+    border: 1px solid black;
+    margin-left: 1em;
+    width: 500px;
+    clear:both;
+}
+
+div#thumbnail {
+    float:left;
+    width: 84px;
+    padding-left: 1em;
+}
+
+div#title {
+    float: left;
+    width: 50%;
+    height: 84px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+div#charname {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+div#subtitle {
+    font-size: normal;
+}
+
+.content
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .divTable
@@ -8,53 +48,22 @@ body {
     width:auto;
     background-color:SlateGrey;
     border:1px solid #666666;
-    border-spacing:5px;
-    margin-top: 1em;
     clear: both;
-    margin-left: 1em;
-
-}
-
-img.header {
-    float: left;
-    vertical-align: middle;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-right: 1em;
-    margin-left: 1em;
-}
-
-.titletext {
-    padding-top: .75em;
-    font-weight: bold;
-    font-size: xx-large;
-    vertical-align: middle;
-}
-
-.subtitle {
-    font-size: large;
-    vertical-align: middle;
-}
-
-.thumbnail {
-    border: 1px;
-    vertical-align: middle;
 }
 
 .row
 {
    display:table-row;
-   width:auto;
 }
 
-.header
-{
-    font-weight:bold;
-}
 .cell
 {
     float:left;/*fix for  buggy browsers*/
     display:table-column;
     width:350px;
     background-color:DarkGray;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

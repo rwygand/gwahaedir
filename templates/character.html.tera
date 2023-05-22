@@ -5,44 +5,45 @@
 </head>
 <body>
 
-  <div class="title">
-    <img class="thumbnail header" src="{{thumbnail_url|safe}}" height="84" width="84">
-    <div class="titletext">
-      {{ name }}
-      <div class="subtitle">{{ race }} {{ class }}</div>
+    <div style="overflow: hidden;">
+       <div id="thumbnail">
+          <img src="{{thumbnail_url}}">
+       </div>
+       <div id="title">
+          <div id="charname">
+             {{name}}
+          </div>
+          <div id="subtitle">
+             {{class}}
+          </div>
+       </div>
     </div>
-  </div>
 
-  <div class="divTable">
-      <div class="row header">
-        <div class="cell">Recent Dungeons</div>
-        <div class="cell"></div>
+
+  <div class="content">
+      <h2>Recent Dungeons</h2>
+      <div class="divTable">
+          {% for run in mythic_plus_recent_runs %}
+            <div class="row">
+              <div class="cell">
+                <a href="{{run.url}}">{{ run.dungeon }}</a> ( {{ run.mythic_level}} )
+              </div>
+            <div class="cell">{{ run.completed_at }}</div>
+            </div>
+          {% endfor %}
       </div>
 
-      {% for run in mythic_plus_recent_runs %}
-        <div class="row">
-          <div class="cell">
-            <a href="{{run.url}}">{{ run.dungeon }}</a> ( {{ run.mythic_level}} )
-          </div>
-        <div class="cell">{{ run.completed_at }}</div>
-        </div>
-      {% endfor %}
-  </div>
-
-  <div class="divTable">
-      <div class="row header">
-        <div class="cell">Best Dungeons</div>
+      <h2>Best Dungeons</h2>
+      <div class="divTable">
+          {% for run in mythic_plus_best_runs %}
+            <div class="row">
+              <div class="cell">
+                <a href="{{run.url}}">{{ run.dungeon }}</a> ( {{ run.mythic_level}} )
+              </div>
+              <div class="cell">{{ run.completed_at }}</div>
+            </div>
+          {% endfor %}
       </div>
-
-      {% for run in mythic_plus_best_runs %}
-        <div class="row">
-          <div class="cell">
-            <a href="{{run.url}}">{{ run.dungeon }}</a> ( {{ run.mythic_level}} )
-          </div>
-          <div class="cell">{{ run.completed_at }}</div>
-        </div>
-      {% endfor %}
   </div>
-
 </body>
 </html>
