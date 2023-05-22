@@ -60,7 +60,7 @@ div#subtitle {
 {
     float:left;/*fix for  buggy browsers*/
     display:table-column;
-    width:350px;
+    width:270px;
     background-color:DarkGray;
     padding-left: 10px;
     padding-right: 10px;
