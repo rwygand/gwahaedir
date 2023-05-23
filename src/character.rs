@@ -4,6 +4,7 @@ use raider_io::RaiderIO;
 use serde::{Deserialize, Serialize};
 use rocket_db_pools::Connection;
 use deadpool_redis::redis::AsyncCommands;
+use chrono::prelude::*;
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct CharacterDetail {
@@ -31,7 +32,7 @@ pub struct MythicRun {
     pub dungeon: String,
     pub short_name: String,
     pub mythic_level: u8,
-    pub completed_at: String,
+    pub completed_at: DateTime<Utc>,
     pub clear_time_ms: u64,
     pub par_time_ms: u64,
     pub num_keystone_upgrades: Option<u8>,
@@ -75,6 +76,6 @@ pub async fn fetch(mut db: Connection<RedisPool>, char_name: &str) -> Result<Cha
         println!("Wrote character {} to cache!", char_name);
     }
 
-    let roster = serde_json::from_str(data_s.as_str())?;
+    let roster: CharacterDetail = serde_json::from_str(data_s.as_str())?;
     Ok(roster)
 }

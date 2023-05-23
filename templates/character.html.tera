@@ -28,7 +28,7 @@
               <div class="cell">
                 <a href="{{run.url}}">{{ run.dungeon }}</a> ({{ run.mythic_level}}) +{{run.num_keystone_upgrades}}
               </div>
-            <div class="cell">{{ run.completed_at }}</div>
+            <div class="cell">{{ run.completed_at | date(format="%A %B %d, %Y at %H:%M", timezone="America/Los_Angeles") }}</div>
             </div>
           {% endfor %}
       </div>
@@ -40,7 +40,7 @@
               <div class="cell">
                 <a href="{{run.url}}">{{ run.dungeon }}</a> ({{ run.mythic_level}}) +{{run.num_keystone_upgrades}}
               </div>
-              <div class="cell">{{ run.completed_at }}</div>
+            <div class="cell">{{ run.completed_at | date(format="%A %B %d, %Y at %H:%M", timezone="America/Los_Angeles") }}</div>
             </div>
           {% endfor %}
       </div>
