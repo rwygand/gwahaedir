@@ -1,5 +1,5 @@
 mod client;
-mod period;
+mod models;
 
 pub use client::RaiderIO;
-pub use period::*;
+pub use models::*;
