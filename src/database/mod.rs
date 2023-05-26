@@ -67,3 +67,31 @@ pub async fn character(mut db: Connection<RedisPool>, char_name: &str) -> Result
 
     Ok(CharacterInfo::from(chr))
 }
+
+pub async fn periods(mut db: Connection<RedisPool>) -> Result<PeriodList, Box<dyn Error>> {
+    let cache_data = db.get("periods").await;
+    let data_s: String = match cache_data {
+        Ok(s) => {
+            println!("Found periods in cache!");
+            s
+        },
+        Err(_err) => {
+            println!("periods not found in cache!");
+            "".to_string()
+        }
+    };
+
+    let p;
+
+    if data_s.is_empty() {
+        p = RaiderIO::new().get_periods().await?;
+        // best effort write to cache
+        let data = serde_json::to_string(&p)?;
+        db.set_ex("periods", &data, 60 * 60 * 4).await?;
+        println!("Wrote periods to cache!");
+    } else {
+        p = serde_json::from_str(data_s.as_str())?;
+    }
+
+    Ok(p)
+}
