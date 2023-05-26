@@ -1,6 +1,6 @@
 use std::error::Error;
-use crate::{raider_io, RedisPool};
-use raider_io::RaiderIO;
+use crate::RedisPool;
+use crate::raider_io::RaiderIO;
 use serde::{Deserialize, Serialize};
 use rocket_db_pools::Connection;
 use deadpool_redis::redis::AsyncCommands;
