@@ -3,7 +3,7 @@ use std::error::Error;
 use crate::raider_io::*;
 use rocket_db_pools::Connection;
 use deadpool_redis::redis::AsyncCommands;
-use crate::models::CharacterList;
+use crate::models::{CharacterInfo, CharacterList};
 
 #[derive(Database)]
 #[database("gwahaedir")]
@@ -40,7 +40,7 @@ pub async fn characters(mut db: Connection<RedisPool>) -> Result<CharacterList, 
 
 /// Fetches a character detail record from redis. If it's not there, fetches it from
 /// RaiderIO. Deserializes the result into a CharacterDetail
-pub async fn character(mut db: Connection<RedisPool>, char_name: &str) -> Result<CharacterDetail, Box<dyn Error>> {
+pub async fn character(mut db: Connection<RedisPool>, char_name: &str) -> Result<CharacterInfo, Box<dyn Error>> {
     let cache_data = db.get(char_name).await;
     let data_s: String = match cache_data {
         Ok(s) => {
@@ -65,5 +65,5 @@ pub async fn character(mut db: Connection<RedisPool>, char_name: &str) -> Result
         chr = serde_json::from_str(data_s.as_str())?;
     }
 
-    Ok(chr)
+    Ok(CharacterInfo::from(chr))
 }

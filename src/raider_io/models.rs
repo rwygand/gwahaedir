@@ -1,14 +1,14 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 
-#[derive(Serialize, Deserialize, Default, Debug)]
+#[derive(Serialize, Deserialize, Default, Debug, Clone)]
 pub struct Period {
     pub period: i64,
     pub start: DateTime<Utc>,
     pub end: String,
 }
 
-#[derive(Serialize, Deserialize, Default, Debug)]
+#[derive(Serialize, Deserialize, Default, Debug, Clone)]
 pub struct Periods {
     pub region: String,
     pub previous: Period,
@@ -16,12 +16,12 @@ pub struct Periods {
     pub next: Period,
 }
 
-#[derive(Serialize, Deserialize, Default, Debug)]
+#[derive(Serialize, Deserialize, Default, Debug, Clone)]
 pub struct PeriodList {
     pub periods: Vec<Periods>,
 }
 
-#[derive(Serialize, Deserialize, Default, Debug)]
+#[derive(Serialize, Deserialize, Default, Debug, Clone)]
 pub struct CharacterDetail {
     pub name: String,
     pub race: String,
@@ -35,14 +35,14 @@ pub struct CharacterDetail {
     pub thumbnail_url: String,
     pub region: String,
     pub realm: String,
-    pub last_crawled_at: String,
+    pub last_crawled_at: DateTime<Utc>,
     pub profile_url: String,
     pub profile_banner: String,
     pub mythic_plus_recent_runs: Vec<MythicRun>,
     pub mythic_plus_best_runs: Vec<MythicRun>
 }
 
-#[derive(Serialize, Deserialize, Default, Debug)]
+#[derive(Serialize, Deserialize, Default, Debug, Clone)]
 pub struct MythicRun {
     pub dungeon: String,
     pub short_name: String,
@@ -58,7 +58,7 @@ pub struct MythicRun {
     pub url: String,
 }
 
-#[derive(Serialize, Deserialize, Default, Debug)]
+#[derive(Serialize, Deserialize, Default, Debug, Clone)]
 pub struct Affix {
     pub id: u32,
     pub name: String,
@@ -67,7 +67,7 @@ pub struct Affix {
     pub wowhead_url: String
 }
 
-#[derive(Serialize, Deserialize, Default, Debug)]
+#[derive(Serialize, Deserialize, Default, Debug, Clone)]
 pub struct GuildRoster {
     pub name: String,
     pub faction: String,
@@ -78,7 +78,7 @@ pub struct GuildRoster {
     pub members: Vec<Member>
 }
 
-#[derive(Serialize, Deserialize, Default, Debug)]
+#[derive(Serialize, Deserialize, Default, Debug, Clone)]
 pub struct Member {
     pub rank: i32,
     pub character: MemberDetail,
