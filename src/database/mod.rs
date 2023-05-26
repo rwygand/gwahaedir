@@ -3,6 +3,7 @@ use std::error::Error;
 use crate::raider_io::*;
 use rocket_db_pools::Connection;
 use deadpool_redis::redis::AsyncCommands;
+use crate::models::CharacterList;
 
 #[derive(Database)]
 #[database("gwahaedir")]
@@ -10,7 +11,7 @@ pub struct RedisPool(deadpool_redis::Pool);
 
 /// Fetches the guild roster from redis. If it's not there, fetches it from
 /// RaiderIO. Deserialized the result into a GuildRoster
-pub async fn characters(mut db: Connection<RedisPool>) -> Result<GuildRoster, Box<dyn Error>> {
+pub async fn characters(mut db: Connection<RedisPool>) -> Result<CharacterList, Box<dyn Error>> {
     let cache_data = db.get("guild_roster").await;
     let data_s: String = match cache_data {
         Ok(s) => {
@@ -23,7 +24,7 @@ pub async fn characters(mut db: Connection<RedisPool>) -> Result<GuildRoster, Bo
         }
     };
 
-    let roster;
+    let roster: GuildRoster;
 
     if data_s.is_empty() {
         roster = RaiderIO::new().get_roster().await?;
@@ -34,8 +35,7 @@ pub async fn characters(mut db: Connection<RedisPool>) -> Result<GuildRoster, Bo
     } else {
         roster = serde_json::from_str(data_s.as_str())?
     }
-
-    Ok(roster)
+    Ok(CharacterList::from(roster))
 }
 
 /// Fetches a character detail record from redis. If it's not there, fetches it from

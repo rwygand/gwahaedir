@@ -73,7 +73,7 @@ pub struct GuildRoster {
     pub faction: String,
     pub region: String,
     pub realm: String,
-    pub last_crawled_at: String,
+    pub last_crawled_at: DateTime<Utc>,
     pub profile_url: String,
     pub members: Vec<Member>
 }
@@ -81,11 +81,11 @@ pub struct GuildRoster {
 #[derive(Serialize, Deserialize, Default, Debug)]
 pub struct Member {
     pub rank: i32,
-    pub character: Character,
+    pub character: MemberDetail,
 }
 
-#[derive(Serialize, Deserialize, Default, Debug)]
-pub struct Character {
+#[derive(Serialize, Deserialize, Default, Debug, Clone)]
+pub struct MemberDetail {
     pub name: String,
     pub race: String,
     pub class: String,
@@ -93,11 +93,11 @@ pub struct Character {
     pub active_spec_role: Option<String>,
     pub gender: String,
     pub faction: String,
-    achievement_points: u32,
-    honorable_kills: u32,
-    region: String,
-    realm: String,
-    last_crawled_at: String,
-    profile_url: String,
-    profile_banner: String
+    pub achievement_points: u32,
+    pub honorable_kills: u32,
+    pub region: String,
+    pub realm: String,
+    pub last_crawled_at: DateTime<Utc>,
+    pub profile_url: String,
+    pub profile_banner: String
 }

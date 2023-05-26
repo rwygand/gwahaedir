@@ -2,6 +2,7 @@
 
 #[macro_use]
 extern crate rocket;
+extern crate core;
 
 use rocket_dyn_templates::Template;
 use rocket_db_pools::Database;

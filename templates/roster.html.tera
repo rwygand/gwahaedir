@@ -15,13 +15,13 @@
       <div class="cell">Rank</div>
     </div>
 
-    {% for member in members | sort(attribute="character.name") | sort(attribute="rank") %}
-      {% if member.rank < 5 %}
+    {% for c in characters | sort(attribute="name") | sort(attribute="rank") %}
+      {% if c.rank < 5 %}
       <div class="row">
         <div class="cell">
-          <a href="/character/{{member.character.name}}">{{member.character.name}}</a></div>
-        <div class="cell">{{member.character.class}}</div>
-        <div class="cell">{{member.rank}}</div>
+          <a href="/character/{{c.name}}">{{c.name}}</a></div>
+        <div class="cell">{{c.class}}</div>
+        <div class="cell">{{c.rank}}</div>
       </div>
       {% endif %}
     {% endfor %}
