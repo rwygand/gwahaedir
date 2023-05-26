@@ -3,11 +3,11 @@ use rocket::get;
 use rocket::response::Redirect;
 use rocket::response::status::NotFound;
 use rocket_db_pools::Connection;
-use crate::{character, guild_roster, RedisPool};
+use crate::{database, RedisPool};
 
 #[get("/characters")]
 pub async fn get_all(db: Connection<RedisPool>) -> Result<Template, NotFound<String>> {
-    let roster = guild_roster::fetch(db).await;
+    let roster = database::characters(db).await;
     match roster {
         Ok(roster) => Ok(Template::render("roster", roster)),
         Err(err) => Err(NotFound(format!("Error: {}", err.to_string())))
@@ -16,7 +16,7 @@ pub async fn get_all(db: Connection<RedisPool>) -> Result<Template, NotFound<Str
 
 #[get("/character/<char_name>")]
 pub async fn get(db: Connection<RedisPool>, char_name: &str) -> Result<Template, NotFound<String>> {
-    let char = character::fetch(db, char_name).await;
+    let char = database::character(db, char_name).await;
     match char {
         Ok(cd) => Ok(Template::render("character", cd)),
         Err(err) => Err(NotFound(format!("Error: {}", err.to_string())))

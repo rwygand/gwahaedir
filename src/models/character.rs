@@ -2,12 +2,12 @@ use serde::{Deserialize, Serialize};
 use super::MythicPlusRun;
 
 #[derive(Debug, Deserialize, Serialize)]
-struct CharacterList {
+pub struct CharacterList {
     pub characters: Vec<Character>
 }
 
 #[derive(Debug, Deserialize, Serialize)]
-struct Character {
+pub struct Character {
     pub name: String,
     pub class: String,
     pub race: String,

@@ -8,21 +8,13 @@ use rocket_db_pools::Database;
 use rocket::{launch, get};
 use rocket::fs::FileServer;
 use rocket::response::Redirect;
-use rocket::serde::{Serialize, Deserialize};
 
-mod guild_roster;
-mod character;
 mod raider_io;
 mod routes;
 mod models;
 mod database;
 
-#[derive(Database)]
-#[database("gwahaedir")]
-pub struct RedisPool(deadpool_redis::Pool);
-
-#[derive(Debug, Deserialize, Serialize)]
-pub struct Error(String);
+use database::RedisPool;
 
 #[get("/")]
 fn index() -> Redirect {
@@ -33,7 +25,7 @@ fn index() -> Redirect {
 pub fn rocket() -> _ {
     rocket::build()
         .attach(Template::fairing())
-        .attach(RedisPool::init())
+        .attach(database::RedisPool::init())
         .mount("/public", FileServer::from("./static"))
         .mount("/", routes![
             routes::characters::get,
