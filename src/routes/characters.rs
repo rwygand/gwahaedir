@@ -18,9 +18,9 @@ pub async fn get(db: &RedisPool, char_name: &str) -> Result<Template, AppError> 
     pl.periods.retain(|x| x.region.to_lowercase() == "us");
     let period_start = pl.periods[0].current.start;
     let period_end = pl.periods[0].current.end;
-    char.mythic_plus_recent_runs.retain(|r| {
-        r.completed_at > period_start && r.completed_at < period_end
-    });
+    for r in char.mythic_plus_recent_runs.iter_mut() {
+        r.current = r.completed_at > period_start && r.completed_at < period_end;
+    }
     Ok(Template::render("character", char))
 }
 

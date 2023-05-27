@@ -13,6 +13,7 @@ pub struct MythicPlusRun {
     pub zone_id: u32,
     pub score: f64,
     pub url: String,
+    pub current: bool,
 }
 
 impl From<raider_io::MythicRun> for MythicPlusRun {
@@ -27,6 +28,7 @@ impl From<raider_io::MythicRun> for MythicPlusRun {
             zone_id: r.zone_id,
             score: r.score,
             url: r.url,
+            current: false, // default to false
         }
     }
 }

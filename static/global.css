@@ -30,6 +30,11 @@ div#charname {
     font-weight: bold;
 }
 
+.outofdate {
+  background-color: #f00;
+  text-decoration: line-through;
+}
+
 div#subtitle {
     font-size: normal;
 }
