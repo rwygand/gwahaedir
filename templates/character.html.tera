@@ -20,10 +20,13 @@
           </div>
        </div>
        <div class="nav"><a href="/roster">Roster</a></div>
+       <div class="nav"><a href="/character/refresh/{{name}}">Refresh</a></div>
+
     </div>
 
     <div class="content">
       <h2>Recent Dungeons</h2>
+      <p>Runs in previous weeks are struck through</p>
       <div class="divTable">
           {% for run in mythic_plus_recent_runs %}
             <div class="row">
@@ -35,7 +38,7 @@
           {% endfor %}
       </div>
 
-      <h2>Best Dungeons</h2>
+      <h2>Best Dungeons (All Time)</h2>
       <div class="divTable">
           {% for run in mythic_plus_best_runs %}
             <div class="row">

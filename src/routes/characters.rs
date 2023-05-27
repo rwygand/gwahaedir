@@ -24,6 +24,12 @@ pub async fn get(db: &RedisPool, char_name: &str) -> Result<Template, AppError> 
     Ok(Template::render("character", char))
 }
 
+#[get("/character/refresh/<char_name>")]
+pub async fn refresh(db: &RedisPool, char_name: &str) -> Result<Redirect, AppError> {
+    database::clear_character(db.get().await?, char_name).await?;
+    Ok(Redirect::to(uri!(get(char_name))))
+}
+
 // backwards bookmark compatibility
 #[get("/roster")]
 pub fn roster() -> Redirect {

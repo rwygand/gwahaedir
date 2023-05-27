@@ -33,6 +33,7 @@ pub fn rocket() -> _ {
             routes::characters::get,
             routes::characters::get_all,
             routes::characters::roster,
+            routes::characters::refresh,
             routes::periods::periods,
             index
         ])

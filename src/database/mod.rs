@@ -67,6 +67,11 @@ pub async fn character(mut db: deadpool_redis::Connection, char_name: &str) -> R
     Ok(CharacterInfo::from(chr))
 }
 
+pub async fn clear_character(mut db: deadpool_redis::Connection, char_name: &str) -> Result<(), Box<dyn Error>> {
+    db.del(char_name).await?;
+    Ok(())
+}
+
 pub async fn periods(mut db: deadpool_redis::Connection) -> Result<PeriodList, Box<dyn Error>> {
     let cache_data = db.get("periods").await;
     let data_s: String = match cache_data {
