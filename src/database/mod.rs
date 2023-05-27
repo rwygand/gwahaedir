@@ -1,7 +1,6 @@
 use rocket_db_pools::Database;
 use std::error::Error;
 use crate::raider_io::*;
-use rocket_db_pools::Connection;
 use deadpool_redis::redis::AsyncCommands;
 use crate::models::{CharacterInfo, CharacterList};
 
@@ -11,7 +10,7 @@ pub struct RedisPool(deadpool_redis::Pool);
 
 /// Fetches the guild roster from redis. If it's not there, fetches it from
 /// RaiderIO. Deserialized the result into a GuildRoster
-pub async fn characters(mut db: Connection<RedisPool>) -> Result<CharacterList, Box<dyn Error>> {
+pub async fn characters(mut db: deadpool_redis::Connection) -> Result<CharacterList, Box<dyn Error>> {
     let cache_data = db.get("guild_roster").await;
     let data_s: String = match cache_data {
         Ok(s) => {
@@ -40,7 +39,7 @@ pub async fn characters(mut db: Connection<RedisPool>) -> Result<CharacterList, 
 
 /// Fetches a character detail record from redis. If it's not there, fetches it from
 /// RaiderIO. Deserializes the result into a CharacterDetail
-pub async fn character(mut db: Connection<RedisPool>, char_name: &str) -> Result<CharacterInfo, Box<dyn Error>> {
+pub async fn character(mut db: deadpool_redis::Connection, char_name: &str) -> Result<CharacterInfo, Box<dyn Error>> {
     let cache_data = db.get(char_name).await;
     let data_s: String = match cache_data {
         Ok(s) => {
@@ -68,7 +67,7 @@ pub async fn character(mut db: Connection<RedisPool>, char_name: &str) -> Result
     Ok(CharacterInfo::from(chr))
 }
 
-pub async fn periods(mut db: Connection<RedisPool>) -> Result<PeriodList, Box<dyn Error>> {
+pub async fn periods(mut db: deadpool_redis::Connection) -> Result<PeriodList, Box<dyn Error>> {
     let cache_data = db.get("periods").await;
     let data_s: String = match cache_data {
         Ok(s) => {

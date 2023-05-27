@@ -14,6 +14,7 @@ mod raider_io;
 mod routes;
 mod models;
 mod database;
+mod errors;
 
 use database::RedisPool;
 

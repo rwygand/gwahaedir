@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 pub struct Period {
     pub period: i64,
     pub start: DateTime<Utc>,
-    pub end: String,
+    pub end: DateTime<Utc>,
 }
 
 #[derive(Serialize, Deserialize, Default, Debug, Clone)]
