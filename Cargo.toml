@@ -21,4 +21,4 @@ redis = { version = "~0.23" }
 rocket_db_pools = { version = "0.1.0-rc.3", features = ["deadpool_redis"]}
 chrono = { version = "~0.4", features = ["serde"] }
 thiserror = "~1.0"
-time = "~0.2.27"
+time = ">=0.2.27"
