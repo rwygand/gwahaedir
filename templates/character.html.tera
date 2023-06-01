@@ -49,7 +49,27 @@
             </div>
           {% endfor %}
       </div>
-    </div>
 
+      <h2>Professions</h2>
+      <div class="divTable">
+          {% for prof in professions.primaries %}
+            <div class="row">
+              <div class="cell">
+                {{ prof.profession.name }}
+              </div>
+              <div class="cell">&nbsp;</div>
+            </div>
+          {% endfor %}
+
+        {% for prof in professions.secondaries %}
+          <div class="row">
+            <div class="cell">
+              {{ prof.profession.name }}
+            </div>
+            <div class="cell">&nbsp;</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
 </body>
 </html>

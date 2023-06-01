@@ -15,6 +15,7 @@ mod routes;
 mod models;
 mod database;
 mod errors;
+mod blizzard;
 
 use database::RedisPool;
 

@@ -1,5 +1,6 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
+use crate::blizzard::CharacterProfessions;
 use crate::models::MythicPlusRun;
 use crate::raider_io;
 
@@ -70,7 +71,8 @@ pub struct CharacterInfo {
     pub last_crawled_at: DateTime<Utc>,
     pub profile_url: String,
     pub mythic_plus_recent_runs: Vec<MythicPlusRun>,
-    pub mythic_plus_best_runs: Vec<MythicPlusRun>
+    pub mythic_plus_best_runs: Vec<MythicPlusRun>,
+    pub professions: CharacterProfessions
 }
 
 impl From<raider_io::CharacterDetail> for CharacterInfo {
@@ -96,6 +98,7 @@ impl From<raider_io::CharacterDetail> for CharacterInfo {
                 .into_iter()
                 .map(MythicPlusRun::from)
                 .collect(),
+            professions: CharacterProfessions::default()
         }
     }
 }
