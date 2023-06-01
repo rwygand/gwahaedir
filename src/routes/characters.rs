@@ -1,8 +1,7 @@
 use rocket_dyn_templates::Template;
 use rocket::get;
 use rocket::response::Redirect;
-use crate::{database, RedisPool, errors::AppError, blizzard};
-use std::env;
+use crate::{database, RedisPool, errors::AppError};
 
 #[get("/characters")]
 pub async fn get_all(db: &RedisPool) -> Result<Template,  AppError> {
@@ -15,12 +14,7 @@ pub async fn get_all(db: &RedisPool) -> Result<Template,  AppError> {
 pub async fn get(db: &RedisPool, char_name: &str) -> Result<Template, AppError> {
     let mut char = database::character(db.get().await?, char_name).await?;
     let mut pl = database::periods(db.get().await?).await?;
-    let client_id = env::var("BLIZZ_ID")?;
-    let client_secret = env::var("BLIZZ_SECRET")?;
-    if let Ok(access_token) = blizzard::get_oauth_token(&client_id, &client_secret, "us").await {
-        println!("Have a valid access token, fetching professions");
-        char.professions = blizzard::get_professions(access_token.access_token, char_name).await?;
-    }
+    char.professions = database::char_profs(db.get().await?, char_name).await?;
 
     pl.periods.retain(|x| x.region.to_lowercase() == "us");
     let period_start = pl.periods[0].current.start;

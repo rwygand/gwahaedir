@@ -62,7 +62,7 @@ pub async fn get_professions(access_token: String, name: &str) -> Result<Charact
         .text()
         .await?;
 
-    println!("text body: {}", x);
+    //println!("text body: {}", x);
 
     let res: CharacterProfessions = serde_json::from_str(x.as_str())?;
     Ok(res)
@@ -85,7 +85,14 @@ pub struct ProfessionTier {
   pub skill_points: i64,
   pub max_skill_points: i64,
   pub tier: Tier,
-  pub known_recipes: Option<Vec<Profession>>,
+  pub known_recipes: Option<Vec<Recipe>>,
+}
+
+#[derive(Serialize, Deserialize, Default, Debug)]
+pub struct Recipe {
+    pub key: Value,
+    pub name: String,
+    pub id: i64,
 }
 
 #[derive(Serialize, Deserialize, Default, Debug)]

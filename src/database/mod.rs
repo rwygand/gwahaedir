@@ -1,7 +1,10 @@
+use std::env;
 use rocket_db_pools::Database;
 use std::error::Error;
 use crate::raider_io::*;
 use deadpool_redis::redis::AsyncCommands;
+use crate::blizzard;
+use crate::blizzard::CharacterProfessions;
 use crate::models::{CharacterInfo, CharacterList};
 
 #[derive(Database)]
@@ -93,6 +96,39 @@ pub async fn periods(mut db: deadpool_redis::Connection) -> Result<PeriodList, B
         let data = serde_json::to_string(&p)?;
         db.set_ex("periods", &data, 60 * 60 * 4).await?;
         println!("Wrote periods to cache!");
+    } else {
+        p = serde_json::from_str(data_s.as_str())?;
+    }
+
+    Ok(p)
+}
+
+pub async fn char_profs(mut db: deadpool_redis::Connection, char_name: &str) -> Result<CharacterProfessions, Box<dyn Error>> {
+    let key: String = format!("{}_profs", char_name);
+    let cache_data = db.get(&key).await;
+    let data_s: String = match cache_data {
+        Ok(s) => {
+            println!("Found {} in cache!", &key);
+            s
+        },
+        Err(_err) => {
+            println!("{} not found in cache!", &key);
+            "".to_string()
+        }
+    };
+
+    let mut p = CharacterProfessions::default();
+
+    if data_s.is_empty() {
+        let client_id = env::var("BLIZZ_ID")?;
+        let client_secret = env::var("BLIZZ_SECRET")?;
+        if let Ok(access_token) = blizzard::get_oauth_token(&client_id, &client_secret, "us").await {
+            println!("Have a valid access token, fetching professions");
+            p = blizzard::get_professions(access_token.access_token, char_name).await?;
+            let data = serde_json::to_string(&p)?;
+            db.set_ex(&key, &data, 60 * 60 * 4).await?;
+            println!("Wrote {} to cache!", &key);
+        }
     } else {
         p = serde_json::from_str(data_s.as_str())?;
     }

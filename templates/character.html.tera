@@ -57,7 +57,13 @@
               <div class="cell">
                 {{ prof.profession.name }}
               </div>
-              <div class="cell">&nbsp;</div>
+              <div class="cell">
+                {%for tier in prof.tiers%}
+                  {% for rec in tier.known_recipes %}
+                    {{rec.name}}<br>
+                  {% endfor %}
+                {% endfor %}
+              </div>
             </div>
           {% endfor %}
 
